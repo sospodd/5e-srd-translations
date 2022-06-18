@@ -1,0 +1,16 @@
+{
+    "name": "5e-srd-translations",
+    "version": "0.0.1",
+    "description": "All content in the D&amp;D 5e SRD that can be considered translatable in Key-Value JSON-format.",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "main": "dist/locales/en/common.json",
+    "private": true,
+    "scripts": {
+        "create-source-locale": "node src/createSourceLocale.js"
+    },
+    "devDependencies": {
+        "5e-database": "ssh://git@github.com:5e-bits/5e-database.git#v1.2.3",
+        "eslint": "^8.18.0",
+        "lodash": "^4.17.21"
+    }
+}
