@@ -60,7 +60,6 @@ class CreateSourceLocale {
 	constructor() {
 		this.options = {
 			generateTemplates: args.find(arg => arg === '--generate-templates'),
-			preventDuplicates: args.find(arg => arg === '--prevent-duplicates'),
 		}
 
 		// set source folder path
@@ -152,8 +151,8 @@ class CreateSourceLocale {
 	}
 
 	/**
-     * iterate through and process source all files
-     */
+		 * iterate through and process source all files
+		 */
 
 	init = async () => {
 		// get all files in 5e database source folder
@@ -176,7 +175,7 @@ class CreateSourceLocale {
 		if (this.options.generateTemplates) {
 			console.log('Generating 5e-database templates')
 		}
-    
+		
 		Promise.all(filesToProcess).then(() => {
 			this.outputSourceLocale(
 				this.localeData,
@@ -188,22 +187,22 @@ class CreateSourceLocale {
 	}
 
 	/**
-     * format placeholder
-     * 
-     * @param path
-     * @param filterSuffix
-     */
+		 * format placeholder
+		 * 
+		 * @param path
+		 * @param filterSuffix
+		 */
 
 	formatPlaceholder(path, filterSuffix = '') {
 		return `${this.placeholderOpen}${path}${filterSuffix}${this.placeholderClose}`
 	}
 
 	/**
-     * filter out non source files and save traits and monsters for last
-     * to make duplicate prevention result in more desirable keys
-     *
-     * @param fileNames
-     */
+		 * filter out non source files and save traits and monsters for last
+		 * to make duplicate prevention result in more desirable keys
+		 *
+		 * @param fileNames
+		 */
 
 	filterAndSortFileNames = (fileNames) => {
 		return fileNames
@@ -220,10 +219,10 @@ class CreateSourceLocale {
 	}
 
 	/**
-     * get domains by parsing file names
-     *
-     * @param fileNames
-     */
+		 * get domains by parsing file names
+		 *
+		 * @param fileNames
+		 */
 
 	getDomainsFromFileNames = (fileNames) => {
 		return fileNames.map(fileName =>
@@ -237,11 +236,11 @@ class CreateSourceLocale {
 	}
 
 	/**
-     * process source file
-     *
-     * @param sourceFileName
-     * @param sourceFileIndex
-     */
+		 * process source file
+		 *
+		 * @param sourceFileName
+		 * @param sourceFileIndex
+		 */
 
 	processSourceFile = async (sourceFileName, sourceFileIndex) => {
 		const sourceFileContents = await fs.readFile(`${this.sourcePath}/${sourceFileName}`)
@@ -253,16 +252,16 @@ class CreateSourceLocale {
 		}
 
 		console.log(`Processing ${domain}...`)
-    
+		
 		return await this.parseSourceFileData(sourceFileData, null, sourceFileData, domain)
 	}
 
 	/**
-     * prettify path for locale data
-     *
-     * @param path
-     * @param sourceFileData
-     */
+		 * prettify path for locale data
+		 *
+		 * @param path
+		 * @param sourceFileData
+		 */
 
 	prettifyPath = (path, sourceFileData, data) => {
 		let pathParts = path.split('.')
@@ -336,7 +335,7 @@ class CreateSourceLocale {
 		// monster properties
 		if (
 			path.match(/^monsters\.\d+\.(alignment|damage_immunities\.\d+|damage_resistances\.\d+|damage_vulnerabilities\.\d+|languages|subtype|type)$/) ||
-            path.match(/^monsters\.([a-z_.\d]+)(options\.from\.[\d.]+\.name|usage\.type|usage\.rest_types\.\d+|notes)$/)
+						path.match(/^monsters\.([a-z_.\d]+)(options\.from\.[\d.]+\.name|usage\.type|usage\.rest_types\.\d+|notes)$/)
 		) {
 			let thirdPart = lastPart
 
@@ -394,13 +393,13 @@ class CreateSourceLocale {
 	}
 
 	/**
-     * parse source file data
-     *
-     * @param data
-     * @param property
-     * @param sourceFileData
-     * @param path
-     */
+		 * parse source file data
+		 *
+		 * @param data
+		 * @param property
+		 * @param sourceFileData
+		 * @param path
+		 */
 
 	parseSourceFileData = async (data, property, sourceFileData, path) => {
 		path = [
@@ -436,10 +435,10 @@ class CreateSourceLocale {
 				// handle everything that is potentially a comma separated list
 				const promises = []
 				const hasAnd = / and /.test(valueForLocale)
-                
+								
 				// determine if list contains `and with oxford comma`
 				const hasOxfordComma = /, and /.test(valueForLocale)
-        
+				
 				// split list by `and with oxford comma`, `and` and `comma` and parse results
 				const placeholders = valueForLocale.split(/, and | and |, /g)
 					.map(result => {
@@ -500,7 +499,7 @@ class CreateSourceLocale {
 					sourceFileData,
 					dataWithVariables
 				)
-                
+								
 				// set locale data
 				await Promise.resolve(
 					_.set(
@@ -555,28 +554,33 @@ class CreateSourceLocale {
 	}
 
 	/**
-     * write source locale to file
-     *
-     * @param localeData
-     */
+		 * write source locale to file
+		 *
+		 * @param localeData
+		 */
 	outputSourceLocale = async (localeData, templateData = null) => {
-		for (const [key, value] of Object.entries(localeData)) {
-			const localeOutput = JSON.stringify({ [key]: value }, null, 2)
+		const sortedLocaleData = Object.keys(localeData).sort().reduce(
+			(obj, key) => {
+				obj[key] = localeData[key]
+				return obj
+			},
+			{}
+		)
 
-			// write translations data for each domain to dist file in default locale folder
-			await fs.writeFile(
-				`dist/locales/en/${key}.json`,
-				localeOutput,
-				'utf8',
-				e => e ? console.error(e) : null
-			)
+		const localeOutput = JSON.stringify(sortedLocaleData, null, 2)
 
-		}
+		// write translations data for each domain to dist file in default locale folder
+		await fs.writeFile(
+			'dist/locales/en.json',
+			localeOutput,
+			'utf8',
+			e => e ? console.error(e) : null
+		)
 
 		if (templateData) {
 			for (const [key, value] of Object.entries(templateData)) {
 				const templateOutput = JSON.stringify(value, null, 2)
-                
+								
 				// write template data to files in src templates folder with original filenames
 				await fs.writeFile(
 					`src/templates/${key}.json`,
