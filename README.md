@@ -1,5 +1,5 @@
 # 5e SRD translations
-All content in the D&amp;D 5e SRD that can be considered translatable in nested JSON-format.
+All content in the D&amp;D 5e SRD that can be considered translatable in Key-Value JSON-format.
 
 ## Getting started
 
