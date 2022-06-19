@@ -92,7 +92,7 @@ class CreateSourceLocale {
 			/^feats\.([a-z_.\d]+)prerequisites$/,
 
 			// features
-			/^features\.([a-z_.\d]+)(class|level|feature_specific|parent|prerequisites)$/,
+			/^features\.([a-z_.\d]+)(class|level|feature_specific|parent|prerequisites|reference)$/,
 
 			// magic items
 			/^magic_items\.([a-z_.\d]+)(equipment_category|variant|variants)$/,
@@ -151,8 +151,8 @@ class CreateSourceLocale {
 	}
 
 	/**
-		 * iterate through and process source all files
-		 */
+	 * iterate through and process source all files
+	 */
 
 	init = async () => {
 		// get all files in 5e database source folder
@@ -187,22 +187,22 @@ class CreateSourceLocale {
 	}
 
 	/**
-		 * format placeholder
-		 * 
-		 * @param path
-		 * @param filterSuffix
-		 */
+	 * format placeholder
+	 * 
+	 * @param path
+	 * @param filterSuffix
+	 */
 
 	formatPlaceholder(path, filterSuffix = '') {
 		return `${this.placeholderOpen}${path}${filterSuffix}${this.placeholderClose}`
 	}
 
 	/**
-		 * filter out non source files and save traits and monsters for last
-		 * to make duplicate prevention result in more desirable keys
-		 *
-		 * @param fileNames
-		 */
+	 * filter out non source files and save traits and monsters for last
+	 * to make duplicate prevention result in more desirable keys
+	 *
+	 * @param fileNames
+	 */
 
 	filterAndSortFileNames = (fileNames) => {
 		return fileNames
@@ -219,10 +219,10 @@ class CreateSourceLocale {
 	}
 
 	/**
-		 * get domains by parsing file names
-		 *
-		 * @param fileNames
-		 */
+	 * get domains by parsing file names
+	 *
+	 * @param fileNames
+	 */
 
 	getDomainsFromFileNames = (fileNames) => {
 		return fileNames.map(fileName =>
@@ -236,11 +236,11 @@ class CreateSourceLocale {
 	}
 
 	/**
-		 * process source file
-		 *
-		 * @param sourceFileName
-		 * @param sourceFileIndex
-		 */
+	 * process source file
+	 *
+	 * @param sourceFileName
+	 * @param sourceFileIndex
+	 */
 
 	processSourceFile = async (sourceFileName, sourceFileIndex) => {
 		const sourceFileContents = await fs.readFile(`${this.sourcePath}/${sourceFileName}`)
@@ -257,11 +257,11 @@ class CreateSourceLocale {
 	}
 
 	/**
-		 * prettify path for locale data
-		 *
-		 * @param path
-		 * @param sourceFileData
-		 */
+	 * prettify path for locale data
+	 *
+	 * @param path
+	 * @param sourceFileData
+	 */
 
 	prettifyPath = (path, sourceFileData, data) => {
 		let pathParts = path.split('.')
@@ -393,13 +393,13 @@ class CreateSourceLocale {
 	}
 
 	/**
-		 * parse source file data
-		 *
-		 * @param data
-		 * @param property
-		 * @param sourceFileData
-		 * @param path
-		 */
+	 * parse source file data
+	 *
+	 * @param data
+	 * @param property
+	 * @param sourceFileData
+	 * @param path
+	 */
 
 	parseSourceFileData = async (data, property, sourceFileData, path) => {
 		path = [
@@ -554,10 +554,11 @@ class CreateSourceLocale {
 	}
 
 	/**
-		 * write source locale to file
-		 *
-		 * @param localeData
-		 */
+	 * write source locale to file
+	 *
+	 * @param localeData
+	 */
+
 	outputSourceLocale = async (localeData, templateData = null) => {
 		const sortedLocaleData = Object.keys(localeData).sort().reduce(
 			(obj, key) => {

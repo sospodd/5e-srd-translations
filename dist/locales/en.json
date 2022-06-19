@@ -2599,8 +2599,7 @@
       "name": "Spellcasting: Bard",
       "desc": [
         "You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations."
-      ],
-      "reference": "/api/classes/bard/spellcasting"
+      ]
     },
     "bardic_inspiration_d6": {
       "name": "Bardic Inspiration (d6)",
@@ -2788,8 +2787,7 @@
       "name": "Spellcasting: Cleric",
       "desc": [
         "As a conduit for divine power, you can cast cleric spells."
-      ],
-      "reference": "/api/classes/cleric/spellcasting"
+      ]
     },
     "divine_domain": {
       "name": "Divine Domain",
@@ -2978,8 +2976,7 @@
       "name": "Spellcasting: Druid",
       "desc": [
         "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will."
-      ],
-      "reference": "/api/classes/druid/spellcasting"
+      ]
     },
     "druidic": {
       "name": "Druidic",
@@ -3626,8 +3623,7 @@
       "name": "Spellcasting: Paladin",
       "desc": [
         "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does."
-      ],
-      "reference": "/api/classes/paladin/spellcasting"
+      ]
     },
     "divine_smite": {
       "name": "Divine Smite",
@@ -3825,8 +3821,7 @@
       "name": "Spellcasting: Ranger",
       "desc": [
         "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does."
-      ],
-      "reference": "/api/classes/ranger/spellcasting"
+      ]
     },
     "ranger_archetype": {
       "name": "Ranger Archetype",
@@ -4213,8 +4208,7 @@
       "name": "Spellcasting: Sorcerer",
       "desc": [
         "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells."
-      ],
-      "reference": "/api/classes/sorcerer/spellcasting"
+      ]
     },
     "sorcerous_origin": {
       "name": "Sorcerous Origin",
@@ -4396,8 +4390,7 @@
       "name": "Elemental Affinity",
       "desc": [
         "Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell. At the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour."
-      ],
-      "reference": "/api/subclasses/draconic"
+      ]
     },
     "sorcerer_ability_score_improvement_2": {
       "name": "Ability Score Improvement",
@@ -4472,8 +4465,7 @@
       "name": "Pact Magic",
       "desc": [
         "Your arcane research and the magic bestowed on you by your patron have given you facility with spells."
-      ],
-      "reference": "/api/classes/warlock/spellcasting"
+      ]
     },
     "eldritch_invocations_1": {
       "name": "Eldritch Invocations",
@@ -4859,8 +4851,7 @@
       "name": "Spellcasting: Wizard",
       "desc": [
         "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power."
-      ],
-      "reference": "/api/classes/wizard/spellcasting"
+      ]
     },
     "arcane_recovery": {
       "name": "Arcane Recovery",
