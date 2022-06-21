@@ -7,7 +7,7 @@ All content in the D&amp;D 5e SRD that can be considered translatable in Key-Val
 
 ## Contribute
 
-If you want to help out with translations in an existing language or suggest a new one, please check out (this project on POEditor)[https://poeditor.com/join/project/VRCyPrP4qH].
+If you want to help out with translations in an existing language or suggest a new one, please check out [this project on POEditor](https://poeditor.com/join/project/VRCyPrP4qH).
 
 ## Getting started
 
