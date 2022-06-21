@@ -444,10 +444,11 @@ class CreateSourceLocale {
 					.map(result => {
 						promises.push(
 							Promise.resolve(
-								_.set(
+								_.setWith(
 									this.localeData,
 									this.prettifyPath(path, sourceFileData, result),
-									result
+									result,
+									Object
 								)
 							)
 						)
@@ -502,10 +503,11 @@ class CreateSourceLocale {
 								
 				// set locale data
 				await Promise.resolve(
-					_.set(
+					_.setWith(
 						this.localeData,
 						potentiallyAlteredPath,
-						dataWithVariables
+						dataWithVariables,
+						Object
 					)
 				)
 
@@ -519,10 +521,11 @@ class CreateSourceLocale {
 				const prettifiedPath = this.prettifyPath(path, sourceFileData, valueForLocale)
 
 				await Promise.resolve(
-					_.set(
+					_.setWith(
 						this.localeData,
 						prettifiedPath,
-						valueForLocale
+						valueForLocale,
+						Object
 					)
 				)
 
