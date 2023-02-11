@@ -135,6 +135,16 @@
     }
   },
   "common": {
+    "measurements": {
+      "size": {
+        "medium": "Mellan",
+        "small": "Liten",
+        "large": "Stor",
+        "huge": "Enorm",
+        "gargantuan": "Gigantisk",
+        "tiny": "Pytteliten"
+      }
+    },
     "language_properties": {
       "type": {
         "standard": "Vanligt",
@@ -160,16 +170,6 @@
         "elementals": "Elementärer",
         "fey_creatures": "Vimsiga varelser",
         "underdark_traders": "Undermörkrets köpmän"
-      }
-    },
-    "measurements": {
-      "size": {
-        "medium": "Mellan",
-        "small": "Liten",
-        "large": "Stor",
-        "huge": "Enorm",
-        "gargantuan": "Gigantisk",
-        "tiny": "Pytteliten"
       }
     }
   },

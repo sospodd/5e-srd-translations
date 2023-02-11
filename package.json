@@ -9,7 +9,7 @@
         "create-source-locale": "node src/createSourceLocale.js"
     },
     "devDependencies": {
-        "5e-database": "ssh://git@github.com:5e-bits/5e-database.git#v1.2.3",
+        "5e-database": "ssh://git@github.com:5e-bits/5e-database.git#v3.1.1",
         "eslint": "^8.18.0",
         "lodash": "^4.17.21"
     }
