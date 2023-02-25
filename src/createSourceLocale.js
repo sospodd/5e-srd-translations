@@ -98,7 +98,7 @@ class CreateSourceLocale {
 			/^magic_items\.([a-z_.\d]+)(equipment_category|variant|variants)$/,
 
 			// monsters
-			/^monsters\.([a-z_.\d]+)(attack_options|challenge_rating|condition_immunities|damage|dc|options\.from\.[\d.]+\.type|proficiencies|spellcasting)$/,
+			/^monsters\.([a-z_.\d]+)((actions\.([a-z_.\d]+)(option_set_type|option_type|count|type))|multiattack_type|armor_class|attack_options|challenge_rating|condition_immunities|damage|dc|hit_points_roll|image|images|options\.from\.[\d.]+\.type|proficiencies|spellcasting)$/,
 
 			// proficiencies
 			/^proficiencies\.([a-z_.\d]+)(type|classes|races|reference)$/,
@@ -122,7 +122,7 @@ class CreateSourceLocale {
 			/^subraces\.([a-z_.\d]+)(race|ability_bonuses|racial_traits|starting_proficiencies|language_options)$/,
 
 			// traits
-			/^traits\.([a-z_.\d]+)(races|proficiencies|proficiency_choices|trait_specific|parent)$/
+			/^traits\.([a-z_.\d]+)(language_options|races|proficiencies|proficiency_choices|trait_specific|parent)$/
 		]
 
 		this.valuesToIgnore = [
@@ -132,7 +132,11 @@ class CreateSourceLocale {
 			/^$/,
 		]
 
+		this.numberRegex = /(\d,*\.?\d+|\d{1,3}(?:,\d{3})*(?:\.\d+)?)(?!\S\/)/g
+
 		this.measurementsRegex = /\.(blindsight|capacity|casting_time|darkvision|duration|range|count|size|tremorsense|truesight|unit|speed\.(burrow|climb|fly|swim|walk))$/
+
+		this.parenthesizedInformationRegex = / \((.*)\)$/g
 
 		// set up object to store locale data in
 		this.localeData = {
@@ -151,7 +155,7 @@ class CreateSourceLocale {
 	}
 
 	/**
-	 * iterate through and process source all files
+	 * iterate through and process all source files
 	 */
 
 	init = async () => {
@@ -267,6 +271,23 @@ class CreateSourceLocale {
 		let pathParts = path.split('.')
 		let lastPart = pathParts[pathParts.length - 1]
 
+		if (
+			path.match(/monsters.\d+.actions.\d+.[a-z_.\d]+(name|action_name|desc)/)
+		) {
+			pathParts = [
+				...pathParts.slice(0, 3),
+				data.sanitize(),
+				lastPart === 'action_name' ? 'name' : lastPart,
+			]
+		}
+
+		if (lastPart === 'string') {
+			pathParts = [
+				...pathParts.slice(0, -1),
+				'desc'
+			]
+		}
+
 		// replace numeric indeces with name based ones for monster actions
 		if (path.match(/(special_abilities|actions|reactions|legendary_actions|spellcasting\.info)\.\d+\.(name|desc|desc\.\d+)$/)) {
 			const pathToName = [...pathParts.slice(1, pathParts.length - (path.match(/desc\.\d+$/) ? 2 : 1)), 'name'].join('.')
@@ -285,6 +306,17 @@ class CreateSourceLocale {
 			if (path.match(/^ability_scores\./)) {
 				// for ability scores, use sanitized full name instead of abbreviated
 				textIndex = _.get(sourceFileData, `${pathToItem}.full_name`).sanitize()
+			} else if (path.match(/^features\./)) {
+				// for features, use sanitized name without parenthesized information to avoid duplicate entries
+				let prefix = ''
+				const sanitizedName = _.get(sourceFileData, `${pathToItem}.name`).replaceAll(this.parenthesizedInformationRegex, '').sanitize()
+				const itemIndex = _.get(sourceFileData, `${pathToItem}.index`).replaceAll('-', '_')
+
+				if (itemIndex.split(sanitizedName).length > 1) {
+					prefix = itemIndex.split(sanitizedName)[0]
+				}
+
+				textIndex = `${prefix}${sanitizedName}`
 			} else {
 				textIndex = _.get(sourceFileData, `${pathToItem}.index`)
 			}
@@ -334,8 +366,8 @@ class CreateSourceLocale {
 
 		// monster properties
 		if (
-			path.match(/^monsters\.\d+\.(alignment|damage_immunities\.\d+|damage_resistances\.\d+|damage_vulnerabilities\.\d+|languages|subtype|type)$/) ||
-						path.match(/^monsters\.([a-z_.\d]+)(options\.from\.[\d.]+\.name|usage\.type|usage\.rest_types\.\d+|notes)$/)
+			path.match(/^monsters\.\d+\.(alignment|damage_immunities\.\d+|damage_resistances\.\d+|damage_vulnerabilities\.\d+|languages|subtype|type|actions.\d+.(actions.\d+.type))$/)
+			|| path.match(/^monsters\.([a-z_.\d]+)(options\.from\.[\d.]+\.name|usage\.type|usage\.rest_types\.\d+|notes)$/)
 		) {
 			let thirdPart = lastPart
 
@@ -424,11 +456,59 @@ class CreateSourceLocale {
 				return this.parseSourceFileData(data[key], key, sourceFileData, path)
 			}))
 		} else {
-			const valueForLocale = data
+			let valueForLocale = data
 			let valueForTemplate
+			let keyWithVariables
+			let valueForTemplateSuffix = ''
+
 			// handle other types
 			if (this.valuesToIgnore.find(valueRegex => valueForLocale.toString().match(valueRegex))) {
 				return
+			}
+
+			if (/features.([a-z_.\d]+).name/.test(path) && this.parenthesizedInformationRegex.test(data)) {
+				const parenthesizedInformation = data
+					.match(this.parenthesizedInformationRegex)[0] || ''
+
+				let dataWithVariables = ''
+
+				if (parenthesizedInformation) {
+					// replace any numeric values in template key with incrementing variables
+					keyWithVariables = parenthesizedInformation
+						.replaceWithVariables(this.numberRegex)
+						.sanitize()
+
+					// replace any numeric values in value with incrementing variables
+					dataWithVariables = parenthesizedInformation
+						.replace(' (', '')
+						.replace(')', '')
+						.replaceWithVariables(this.numberRegex, this.placeholderOpen, this.placeholderClose)
+
+					// set locale data
+					await Promise.resolve(
+						_.setWith(
+							this.localeData,
+							`common.measurements.with_unit.${keyWithVariables}`,
+							dataWithVariables,
+							Object
+						)
+					)
+				}
+
+				// determine if there are any numeric values in valueForLocale
+				const matches = Array.from(valueForLocale.matchAll(this.numberRegex), i => i[0])
+
+				// for each matching numeric value, add a replace filter with variable and captured number
+				const filterSuffix = matches.length
+					? matches
+						.map((match, matchIndex) => {
+							return ` | replace: '${this.placeholderOpen}${matchIndex.toVariable()}${this.placeholderClose}', '${match}'`
+						})
+						.join('')
+					: ''
+
+				valueForLocale = data.replaceAll(parenthesizedInformation, '')
+				valueForTemplateSuffix = ` ({{ ${keyWithVariables}${filterSuffix} }})`
 			}
 
 			if (path.match(/^monsters\.([a-z_.\d]+)(damage_resistances\.\d+|damage_vulnerabilities\.\d+|damage_immunities\.\d+|languages)$/)) {
@@ -474,14 +554,13 @@ class CreateSourceLocale {
 				// handle everything that we'll consider `measurement` related
 
 				// determine if there are any numeric values in valueForLocale
-				const numberRegex = /(\d*\.?\d+|\d{1,3}(?:,\d{3})*(?:\.\d+)?)(?!\S)/g
-				const matches = Array.from(valueForLocale.matchAll(numberRegex), i => i[0])
+				const matches = Array.from(valueForLocale.matchAll(this.numberRegex), i => i[0])
 
 				// replace any numeric values in template key with incrementing variables
-				const keyWithVariables = valueForLocale.replaceWithVariables(numberRegex).sanitize()
+				const keyWithVariables = valueForLocale.replaceWithVariables(this.numberRegex).sanitize()
 
 				// replace any numeric values in value with incrementing variables
-				const dataWithVariables = valueForLocale.replaceWithVariables(numberRegex, this.placeholderOpen, this.placeholderClose)
+				const dataWithVariables = valueForLocale.replaceWithVariables(this.numberRegex, this.placeholderOpen, this.placeholderClose)
 
 				// for each matching numeric value, add a replace filter with variable and captured number
 				const filterSuffix = matches.length
@@ -530,7 +609,7 @@ class CreateSourceLocale {
 				)
 
 				if (this.options.generateTemplates) {
-					valueForTemplate = this.formatPlaceholder(prettifiedPath)
+					valueForTemplate = `${this.formatPlaceholder(prettifiedPath)}${valueForTemplateSuffix}`
 				}
 			}
 

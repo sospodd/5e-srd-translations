@@ -135,16 +135,6 @@
     }
   },
   "common": {
-    "measurements": {
-      "size": {
-        "medium": "Mellan",
-        "small": "Liten",
-        "large": "Stor",
-        "huge": "Enorm",
-        "gargantuan": "Gigantisk",
-        "tiny": "Pytteliten"
-      }
-    },
     "language_properties": {
       "type": {
         "standard": "Vanligt",
@@ -170,6 +160,16 @@
         "elementals": "Elementärer",
         "fey_creatures": "Vimsiga varelser",
         "underdark_traders": "Undermörkrets köpmän"
+      }
+    },
+    "measurements": {
+      "size": {
+        "medium": "Mellan",
+        "small": "Liten",
+        "large": "Stor",
+        "huge": "Enorm",
+        "gargantuan": "Gigantisk",
+        "tiny": "Pytteliten"
       }
     }
   },
@@ -1243,8 +1243,8 @@
         "0": "Från och med att du väljer denna väg på nivå 3 kan du gå in en yra under ditt raseri. Om du gör detta, kan du utföra en enda attack med närstridsvapen som en bonushandling under varje tur som följer denna. När ditt raseri avslutas lider du av utmattning (som beskrivs i appendix A)."
       }
     },
-    "barbarian_ability_score_improvement_1": {
-      "name": "Barbar: Förbättring av förmågepoäng 1",
+    "barbarian_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
@@ -1274,14 +1274,8 @@
         "1": "Om du är överraskad i början av en strid och inte är invalidiserad, kan du agera normalt under din första tur, men endast om du går in i ditt raseri innan du gör något annat under den turen."
       }
     },
-    "barbarian_ability_score_improvement_2": {
-      "name": "Barbar: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "brutal_critical_1_die": {
-      "name": "Brutal kritisk (1 tärning)",
+    "brutal_critical": {
+      "name": "Brutal kritisk",
       "desc": {
         "0": "Från och med nivå 9 kan du slå ytterligare en tärning för vapenskada för att avgöra den extra skada för en kritisk träff med en närstridsvapenattack. Detta ökar till två tärningar på nivå 13 och till 3 tärningar på nivå 17."
       }
@@ -1300,18 +1294,6 @@
         "1": "Varje gång du använder denna egenskap efter den första, ökar svårighetsgraden med 5. När du avslutar en kort eller lång vila, återställs svårighetsgraden till 10."
       }
     },
-    "barbarian_ability_score_improvement_3": {
-      "name": "Barbar: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "brutal_critical_2_dice": {
-      "name": "Brutal kritisk (2 tärningar)",
-      "desc": {
-        "0": "Från och med nivå 9 kan du slå ytterligare en tärning för vapenskada för att avgöra den extra skada för en kritisk träff med en närstridsvapenattack. Detta ökar till två tärningar på nivå 13 och till 3 tärningar på nivå 17."
-      }
-    },
     "retaliation": {
       "name": "Vedergällning",
       "desc": {
@@ -1324,28 +1306,10 @@
         "0": "Från och med nivå 15 är ditt raseri så våldsamt att det endast avslutas tidigare om du blir medvetslös eller om du väljer att avsluta det."
       }
     },
-    "barbarian_ability_score_improvement_4": {
-      "name": "Barbar: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "brutal_critical_3_dice": {
-      "name": "Brutal kritisk (3 tärningar)",
-      "desc": {
-        "0": "Från och med nivå 9 kan du slå ytterligare en tärning för vapenskada för att avgöra den extra skada för en kritisk träff med en närstridsvapenattack. Detta ökar till två tärningar på nivå 13 och till 3 tärningar på nivå 17."
-      }
-    },
     "indomitable_might": {
       "name": "Oövervinnlig makt",
       "desc": {
         "0": "Från och med nivå 18, om din summa för en styrkekontroll är lägre än dina styrkepoäng, kan du använda den poängen istället för summan."
-      }
-    },
-    "barbarian_ability_score_improvement_5": {
-      "name": "Barbar: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "primal_champion": {
@@ -1360,8 +1324,8 @@
         "0": "Du har lärt dig reda ut och omforma verklighetens väv i harmoni med dina önskningar och musik. Dina trollformler är del av din omfattande repertoar, magi som du kan stämma till olika situationer."
       }
     },
-    "bardic_inspiration_d6": {
-      "name": "Bardisk inspiration (d6)",
+    "bardic_inspiration": {
+      "name": "Bardisk inspiration",
       "desc": {
         "0": "Du kan inspirera andra genom berörande ord eller musik. För att göra detta använder du en bonushandling under din tur för att välja en varelse utöver dig själv inom 18 meter som kan höra dig. Den varelsen tilldelas en Bardisk inspirationstärning, en d6. Under de närmsta 10 minuterna kan varelsen slå tärningen en gång och addera antalet som slagits till en förmågekontroll, attackslag eller räddningsslag som den utför. Varelsen kan vänta tills efter den slagit tärningen d20 innan den bestämmer sig för att använda den bardiska inspirationstärningen. Den måste bestämma sig innan spelledaren avgör om slaget lyckas eller misslyckas. När den bardiska inspirationstärningen slagits kan den inte slås om. En varelse kan endast ha en bardisk inspirationstärning åt gången.",
         "1": "Du kan använda denna egenskap det antal gånger som är lika med ditt tillägg för karisma (minst en gång). Du får tillbaka förbrukade användningar när du fullbordar en lång vila.",
@@ -1374,7 +1338,7 @@
         "0": "Från och med nivå 2 kan du addera halva din färdighetsbonus, avrundat nedåt, för färdighetskontroller som inte redan inkluderar din färdighetsbonus."
       }
     },
-    "song_of_rest_d6": {
+    "song_of_rest": {
       "name": "Vilosång (d16)",
       "desc": {
         "0": "Från och med nivå 2 kan du använda lugnande musik eller högtidstal som hjälpmedel för att återuppliva dina skadade allierade under en kort vila. Om du eller någon välvillig varelse som kan höra ditt uppträdande får tillbaka skadepoäng i slutet av en kort vila genom att spendera en eller fler läketärningar, får varje varelse tillbaka extra skadepoäng lika med 1d6.",
@@ -1401,24 +1365,16 @@
         "2": "Du kan välja att använda denna egenskap efter att en varelse slagit sitt slag men innan spelledaren avgör ifall attackslaget eller förmågekontrollen lyckas eller misslyckas, eller innan varelsen utdelar sin skada. Varelsen är immun om den inte kan höra dig eller om den är immun mot att bli förtrollad."
       }
     },
-    "bard_expertise_1": {
+    "bard_expertise": {
       "name": "Expertis",
       "desc": {
         "0": "När du når nivå 3, välj två av dina förmågefärdigheter. Din färdighetsbonus dubblas för förmågekontroller du utför som använder någon av de valda förmågorna. På nivå 10 kan du välja ytterligare två förmågefärdigheter som nyttjar denna fördel."
       }
     },
-    "bard_ability_score_improvement_1": {
-      "name": "Bard: Förbättring av förmågepoäng",
+    "bard_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "bardic_inspiration_d8": {
-      "name": "Bardisk inspiration (d8)",
-      "desc": {
-        "0": "Du kan inspirera andra genom berörande ord eller musik. För att göra detta använder du en bonushandling under din tur för att välja en varelse utöver dig själv inom 18 meter som kan höra dig. Den varelsen tilldelas en Bardisk inspirationstärning, en d6. Under de närmsta 10 minuterna kan varelsen slå tärningen en gång och addera antalet som slagits till en förmågekontroll, attackslag eller räddningsslag som den utför. Varelsen kan vänta tills efter den slagit tärningen d20 innan den bestämmer sig för att använda den bardiska inspirationstärningen. Den måste bestämma sig innan spelledaren avgör om slaget lyckas eller misslyckas. När den bardiska inspirationstärningen slagits kan den inte slås om. En varelse kan endast ha en bardisk inspirationstärning åt gången.",
-        "1": "Du kan använda denna egenskap det antal gånger som är lika med ditt tillägg för karisma (minst en gång). Du får tillbaka förbrukade användningar när du fullbordar en lång vila.",
-        "2": "Din bardiska inspirationstärning ändras när du når en viss nivå inom denna roll. Tärningen blir en d8 på nivå 5, en d10 på nivå 10 och en d12 på nivå 15."
       }
     },
     "font_of_inspiration": {
@@ -1439,55 +1395,7 @@
         "0": "På nivå 6 lär du dig två trollformler som du själv väljer från valfri roll. Du måste välja en trollformel eller ett trolleritrick från en nivå du kan kasta, som visas enligt bardtabellen. De valda trollformlerna räknas som bardtrollformler för dig men räknas inte till det antal av bardtrollformler du känner till."
       }
     },
-    "bard_ability_score_improvement_2": {
-      "name": "Bard: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "song_of_rest_d8": {
-      "name": "Vilosång (d8)",
-      "desc": {
-        "0": "Från och med nivå 2 kan du använda lugnande musik eller högtidstal som hjälpmedel för att återuppliva dina skadade allierade under en kort vila. Om du eller någon välvillig varelse som kan höra ditt uppträdande får tillbaka skadepoäng i slutet av en kort vila genom att spendera en eller fler läketärningar, får varje varelse tillbaka extra skadepoäng lika med 1d6.",
-        "1": "De extra skadepoängen ökar när du uppnår särskilda nivåer inom denna roll: upp till 1d8 på nivå 9, 1d10 på nivå 13 och 1d12 på nivå 17."
-      }
-    },
-    "bardic_inspiration_d10": {
-      "name": "Bardisk inspiration (d10)",
-      "desc": {
-        "0": "Du kan inspirera andra genom berörande ord eller musik. För att göra detta använder du en bonushandling under din tur för att välja en varelse utöver dig själv inom 18 meter som kan höra dig. Den varelsen tilldelas en Bardisk inspirationstärning, en d6. Under de närmsta 10 minuterna kan varelsen slå tärningen en gång och addera antalet som slagits till en förmågekontroll, attackslag eller räddningsslag som den utför. Varelsen kan vänta tills efter den slagit tärningen d20 innan den bestämmer sig för att använda den bardiska inspirationstärningen. Den måste bestämma sig innan spelledaren avgör om slaget lyckas eller misslyckas. När den bardiska inspirationstärningen slagits kan den inte slås om. En varelse kan endast ha en bardisk inspirationstärning åt gången.",
-        "1": "Du kan använda denna egenskap det antal gånger som är lika med ditt tillägg för karisma (minst en gång). Du får tillbaka förbrukade användningar när du fullbordar en lång vila.",
-        "2": "Din bardiska inspirationstärning ändras när du når en viss nivå inom denna roll. Tärningen blir en d8 på nivå 5, en d10 på nivå 10 och en d12 på nivå 15."
-      }
-    },
-    "bard_expertise_2": {
-      "name": "Expertis",
-      "desc": {
-        "0": "När du når nivå 3, välj två av dina förmågefärdigheter. Din färdighetsbonus dubblas för förmågekontroller du utför som använder någon av de valda förmågorna. På nivå 10 kan du välja ytterligare två förmågefärdigheter som nyttjar denna fördel."
-      }
-    },
-    "magical_secrets_1": {
-      "name": "Magiska hemligheter",
-      "desc": {
-        "0": "På nivå 10 har du plundrat magisk kunskap från ett brett spektrum av olika discipliner. Välj två trollformler från valfri roll, inklusive denna. Du måste välja en trollformel på en nivå du kan kasta, som visas i bardtabellen, eller ett trolleritrick.",
-        "1": "De valda trollformlerna räknas som bardtrollformler för dig och ingår i antalet som kan ses i kolumnen ”kända trollformler” i bardtabellen.",
-        "2": "Du lär dig ytterligare två trollformler från valfri roll på nivå 14 och återigen på nivå 18."
-      }
-    },
-    "bard_ability_score_improvement_3": {
-      "name": "Bard: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "song_of_rest_d10": {
-      "name": "Vilosång (d10)",
-      "desc": {
-        "0": "Från och med nivå 2 kan du använda lugnande musik eller högtidstal som hjälpmedel för att återuppliva dina skadade allierade under en kort vila. Om du eller någon välvillig varelse som kan höra ditt uppträdande får tillbaka skadepoäng i slutet av en kort vila genom att spendera en eller fler läketärningar, får varje varelse tillbaka extra skadepoäng lika med 1d6.",
-        "1": "De extra skadepoängen ökar när du uppnår särskilda nivåer inom denna roll: upp till 1d8 på nivå 9, 1d10 på nivå 13 och 1d12 på nivå 17."
-      }
-    },
-    "magical_secrets_2": {
+    "magical_secrets": {
       "name": "Magiska hemligheter",
       "desc": {
         "0": "På nivå 10 har du plundrat magisk kunskap från ett brett spektrum av olika discipliner. Välj två trollformler från valfri roll, inklusive denna. Du måste välja en trollformel på en nivå du kan kasta, som visas i bardtabellen, eller ett trolleritrick.",
@@ -1499,41 +1407,6 @@
       "name": "Makalös talang",
       "desc": {
         "0": "Från och med nivå 14, när du utför en skicklighetskontroll kan du förbruka en användning av bardisk inspiration. Slå en tärning för bardisk inspiration och addera antalet du slagit till din förmågekontroll. Du kan välja att göra detta efter att du slagit en tärning för förmågekontrollen, men innan spelledaren avgör ifall du lyckas eller misslyckas."
-      }
-    },
-    "bardic_inspiration_d12": {
-      "name": "Bardisk inspiration (d12)",
-      "desc": {
-        "0": "Du kan inspirera andra genom berörande ord eller musik. För att göra detta använder du en bonushandling under din tur för att välja en varelse utöver dig själv inom 18 meter som kan höra dig. Den varelsen tilldelas en Bardisk inspirationstärning, en d6. Under de närmsta 10 minuterna kan varelsen slå tärningen en gång och addera antalet som slagits till en förmågekontroll, attackslag eller räddningsslag som den utför. Varelsen kan vänta tills efter den slagit tärningen d20 innan den bestämmer sig för att använda den bardiska inspirationstärningen. Den måste bestämma sig innan spelledaren avgör om slaget lyckas eller misslyckas. När den bardiska inspirationstärningen slagits kan den inte slås om. En varelse kan endast ha en bardisk inspirationstärning åt gången.",
-        "1": "Du kan använda denna egenskap det antal gånger som är lika med ditt tillägg för karisma (minst en gång). Du får tillbaka förbrukade användningar när du fullbordar en lång vila.",
-        "2": "Din bardiska inspirationstärning ändras när du når en viss nivå inom denna roll. Tärningen blir en d8 på nivå 5, en d10 på nivå 10 och en d12 på nivå 15."
-      }
-    },
-    "bard_ability_score_improvement_4": {
-      "name": "Bard: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "song_of_rest_d12": {
-      "name": "Vilosång (d12)",
-      "desc": {
-        "0": "Från och med nivå 2 kan du använda lugnande musik eller högtidstal som hjälpmedel för att återuppliva dina skadade allierade under en kort vila. Om du eller någon välvillig varelse som kan höra ditt uppträdande får tillbaka skadepoäng i slutet av en kort vila genom att spendera en eller fler läketärningar, får varje varelse tillbaka extra skadepoäng lika med 1d6.",
-        "1": "De extra skadepoängen ökar när du uppnår särskilda nivåer inom denna roll: upp till 1d8 på nivå 9, 1d10 på nivå 13 och 1d12 på nivå 17."
-      }
-    },
-    "magical_secrets_3": {
-      "name": "Magiska hemligheter",
-      "desc": {
-        "0": "På nivå 10 har du plundrat magisk kunskap från ett brett spektrum av olika discipliner. Välj två trollformler från valfri roll, inklusive denna. Du måste välja en trollformel på en nivå du kan kasta, som visas i bardtabellen, eller ett trolleritrick.",
-        "1": "De valda trollformlerna räknas som bardtrollformler för dig och ingår i antalet som kan ses i kolumnen ”kända trollformler” i bardtabellen.",
-        "2": "Du lär dig ytterligare två trollformler från valfri roll på nivå 14 och återigen på nivå 18."
-      }
-    },
-    "bard_ability_score_improvement_5": {
-      "name": "Bard: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "superior_inspiration": {
@@ -1555,8 +1428,8 @@
         "1": "Din egendom ger dig egendomstrollformler och andra egenskaper när du väljer den på nivå 1. Den ger dig även ytterligare sätt att använda kanaliserad gudom när du tilldelas den egenskapen på nivå 2, och ytterligare fördelar på nivå 6, 8 och 17."
       }
     },
-    "domain_spells_1": {
-      "name": "Egendomstrollformler 1",
+    "domain_spells": {
+      "name": "Egendomstrollformler",
       "desc": {
         "0": "Varje egendom har en lista över trollformler—dess egendomstrollformler—som du tilldelas när du uppnår klerknivån som beskrivs i egendomsbeskrivningen. När du tilldelas en egendomstrollformel har du den alltid förberedd och den räknas inte till antalet trollformler du kan förbereda per dag.",
         "1": "Om du har en egendomstrollformel som inte finns med i klerktrollformellistan, räknas den trollformeln fortfarande som en klerktrollformel för dig."
@@ -1574,15 +1447,6 @@
         "0": "Från och med nivå 1 är dina läketrollformler mer effektiva. När du använder en trollformel på nivå 1 eller högre för att återställa skadepoäng för en varelse, får varelsen tillbaka ytterligare skadepoäng som är lika med 1 + trollformelns nivå."
       }
     },
-    "channel_divinity_1_rest": {
-      "name": "Kanalisera gudomlighet (1 per vila)",
-      "desc": {
-        "0": "På nivå 2 uppnår du förmågan att kanalisera gudomlig energi direkt från din gudom och kan använda den energin till att ge kraft åt magiska effekter. Du börjar med två sådana effekter: omvänd odöd och en effekt som bestämts av din egendom. En del egendomar ger dig ytterligare effekter när du uppnår högre nivåer, som kan ses i beskrivningen av egendomen.",
-        "1": "När du använder din kanaliserade gudomlighet väljer du vilken effekt som ska skapas. Du måste sedan fullborda en kort eller lång vila för att använda din kanaliserade gudomlighet igen.",
-        "2": "En del kanaliserade gudomligheter kräver räddningar. När du använder en sådan effekt från denna roll är svårighetsgraden lika med svårighetsgraden av din klerks trollformelräddning.",
-        "3": "Från och med nivå 6 kan du använda kanaliserad gudomlighet två gånger utan vila. Från och med nivå 18 kan du använda den tre gånger utan vila. När du fullbordar en kort eller lång vila får du tillbaka dina förbrukade användningar."
-      }
-    },
     "channel_divinity_turn_undead": {
       "name": "Kanalisera gudomlighet: Omvänd odöda",
       "desc": {
@@ -1598,36 +1462,16 @@
         "2": "Välj varelser inom 10 meter och dela ut dessa skadepoäng bland dem. Denna egenskap kan återställa en varelse upp till halva dess högsta skadepoäng. Du kan inte använda denna egenskap på en odöd eller ett levande föremål."
       }
     },
-    "domain_spells_2": {
-      "name": "Egendomstrollformler 2",
-      "desc": {
-        "0": "Varje egendom har en lista över trollformler—dess egendomstrollformler—som du tilldelas när du uppnår klerknivån som beskrivs i egendomsbeskrivningen. När du tilldelas en egendomstrollformel har du den alltid förberedd och den räknas inte till antalet trollformler du kan förbereda per dag.",
-        "1": "Om du har en egendomstrollformel som inte finns med i klerktrollformellistan, räknas den trollformeln fortfarande som en klerktrollformel för dig."
-      }
-    },
-    "cleric_ability_score_improvement_1": {
-      "name": "Klerk: Förbättring av förmågepoäng",
+    "cleric_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
-    "domain_spells_3": {
-      "name": "Egendomstrollformler 3",
-      "desc": {
-        "0": "Varje egendom har en lista över trollformler—dess egendomstrollformler—som du tilldelas när du uppnår klerknivån som beskrivs i egendomsbeskrivningen. När du tilldelas en egendomstrollformel har du den alltid förberedd och den räknas inte till antalet trollformler du kan förbereda per dag.",
-        "1": "Om du har en egendomstrollformel som inte finns med i klerktrollformellistan, räknas den trollformeln fortfarande som en klerktrollformel för dig."
-      }
-    },
-    "destroy_undead_cr_1_2_or_below": {
-      "name": "Förgör odöda (utmaningspoäng 1/2 eller lägre)",
+    "destroy_undead": {
+      "name": "Förgör odöda",
       "desc": {
         "0": "Från och med nivå 5, när en odöd misslyckas med sin räddning mot din egenskap “omvänd odöd”, förgörs varelsen omedelbart om dess utmaningspoäng hamnar på eller under en viss gräns."
-      }
-    },
-    "channel_divinity_2_rest": {
-      "name": "Kanalisera gudomlighet (2 per vila)",
-      "desc": {
-        "0": "Från och med nivå 6 kan du använda din kanaliserade gudomlighet två gånger utan vila. Från och med nivå 18 kan du använda kanaliserad gudomlighet tre gånger utan vila. När du fullbordar en lång eller kort vila får du tillbaka dina förbrukade användningar."
       }
     },
     "blessed_healer": {
@@ -1636,36 +1480,10 @@
         "0": "Från och med nivå 6, de läkerollformler du kastar på andra läker även dig själv. När du kastar en trollformel på nivå 1 eller högre som återställer skadepoäng av en annan varelse än du själv, får du tillbaka skadepoäng lika med 2 + trollformelns nivå."
       }
     },
-    "domain_spells_4": {
-      "name": "Egendomstrollformler 4",
-      "desc": {
-        "0": "Varje egendom har en lista över trollformler—dess egendomstrollformler—som du tilldelas när du uppnår klerknivån som beskrivs i egendomsbeskrivningen. När du tilldelas en egendomstrollformel har du den alltid förberedd och den räknas inte till antalet trollformler du kan förbereda per dag.",
-        "1": "Om du har en egendomstrollformel som inte finns med i klerktrollformellistan, räknas den trollformeln fortfarande som en klerktrollformel för dig."
-      }
-    },
-    "cleric_ability_score_improvement_2": {
-      "name": "Klerk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "destroy_undead_cr_1_or_below": {
-      "name": "Förgör odöda (utmaningspoäng 1 eller lägre)",
-      "desc": {
-        "0": "Från och med nivå 5, när en odöd misslyckas med sin räddning mot din egenskap “omvänd odöd”, förgörs varelsen omedelbart om dess utmaningspoäng hamnar på eller under en viss gräns."
-      }
-    },
     "divine_strike": {
       "name": "Gudomligt slag",
       "desc": {
         "0": "På nivå 8 tilldelas du förmågan att fylla dina vapenslag med gudomlig energi. En gång per tur, när du träffar en varelse med en vapenattack kan du använda attacken till att utdela en extra 1d8 strålningsskada till offret. När du når nivå 14 ökar extraskadan till 2d8."
-      }
-    },
-    "domain_spells_5": {
-      "name": "Egendomstrollformler 5",
-      "desc": {
-        "0": "Varje egendom har en lista över trollformler—dess egendomstrollformler—som du tilldelas när du uppnår klerknivån som beskrivs i egendomsbeskrivningen. När du tilldelas en egendomstrollformel har du den alltid förberedd och den räknas inte till antalet trollformler du kan förbereda per dag.",
-        "1": "Om du har en egendomstrollformel som inte finns med i klerktrollformellistan, räknas den trollformeln fortfarande som en klerktrollformel för dig."
       }
     },
     "divine_intervention": {
@@ -1677,52 +1495,10 @@
         "3": "På nivå 20 lyckas ditt kall på ingripande automatiskt, inget slag krävs."
       }
     },
-    "destroy_undead_cr_2_or_below": {
-      "name": "Förgör odöda (utmaningspoäng 2 eller lägre)",
-      "desc": {
-        "0": "Från och med nivå 5, när en odöd misslyckas med sin räddning mot din egenskap “omvänd odöd”, förgörs varelsen omedelbart om dess utmaningspoäng hamnar på eller under en viss gräns."
-      }
-    },
-    "cleric_ability_score_improvement_3": {
-      "name": "Klerk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "destroy_undead_cr_3_or_below": {
-      "name": "Förgör odöda (utmaningspoäng 3 eller lägre)",
-      "desc": {
-        "0": "Från och med nivå 5, när en odöd misslyckas med sin räddning mot din egenskap “omvänd odöd”, förgörs varelsen omedelbart om dess utmaningspoäng hamnar på eller under en viss gräns."
-      }
-    },
-    "cleric_ability_score_improvement_4": {
-      "name": "Klerk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "destroy_undead_cr_4_or_below": {
-      "name": "Förgör odöda (utmaningspoäng 4 eller lägre)",
-      "desc": {
-        "0": "Från och med nivå 5, när en odöd misslyckas med sin räddning mot din egenskap “omvänd odöd”, förgörs varelsen omedelbart om dess utmaningspoäng hamnar på eller under en viss gräns."
-      }
-    },
     "supreme_healing": {
       "name": "Enastående läkande",
       "desc": {
         "0": "Från och med nivå 17, när du i vanliga fall slår en eller flera tärningar för att återställa skadepoäng med en trollformel använder du istället det största antalet möjligt för varje tärning. Till exempel, istället för att återställa 2d6 skadepoäng för en varelse, återställer du 12."
-      }
-    },
-    "channel_divinity_3_rest": {
-      "name": "Kanalisera gudomlighet (3 per vila)",
-      "desc": {
-        "0": "Från och med nivå 6 kan du använda din kanaliserade gudomlighet två gånger utan vila. Från och med nivå 18 kan du använda kanaliserad gudomlighet tre gånger utan vila. När du fullbordar en lång eller kort vila får du tillbaka dina förbrukade användningar."
-      }
-    },
-    "cleric_ability_score_improvement_5": {
-      "name": "Klerk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "divine_intervention_improvement": {
@@ -1743,8 +1519,8 @@
         "0": "Du kan druidiska, druidernas hemliga språk. Du kan tala språket och använda det för att lämna hemliga meddelanden. Du och andra som kan språket ser automatiskt ett sådant meddelande. Andra ser meddelandets närvaro med en lyckad uppmärksamhetskontroll med svårighetsgrad 15 men kan inte tyda det utan magi."
       }
     },
-    "wild_shape_cr_1_4_or_below_no_flying_or_swim_speed": {
-      "name": "Vild gestalt (1/4 utmaningspoäng eller lägre, ingen flyg- eller simhastighet)",
+    "wild_shape": {
+      "name": "Vild gestalt",
       "desc": {
         "0": "Från och med nivå 2 kan du använda din handling till att magiskt anta formen av ett fä som du har sett tidigare. Du kan använda denna egenskap två gånger. Du får tillbaka förbrukade användningar när du fullbordar en kort eller lång vila.",
         "1": "Din druidnivå avgör vilka fän du kan förvandla dig till, som visas i tabellen: Fägestalt. På nivå 2 till exempel, kan du förvandla dig till vilket fä som helst som har en utmaningsgrad på ¼ eller lägre och som inte har en flyg- eller simningshastighet.",
@@ -1824,40 +1600,18 @@
         "1": "När du till exempel är en druid på nivå 4, kan du återställa upp till två nivåer av trollformelutrymmen. Du kan återställa antingen ett utrymme av nivå 2 eller två utrymmen av nivå 1."
       }
     },
-    "circle_spells_1": {
-      "name": "Cirkeltrollformler 1",
+    "circle_spells": {
+      "name": "Cirkeltrollformler",
       "desc": {
         "0": "Din mystiska förbindelse till landet ger dig förmågan att kasta särskilda trollformler. På nivå 3, 5, 7 och 9 får du tillgång till cirkeltrollformler kopplade till den mark där du först blev en druid.",
         "1": "Välj mark—arktisk, kust, öken, skog, grässlätt, berg eller träsk—och slå upp i den förknippade listan av trollformler.",
         "2": "När du får tillgång till en cirkeltrollformel måste du alltid ha den förberedd och den räknas inte till det antal trollformler du kan förbereda per dag. Om du får tillgång till en trollformel som inte finns med i druidtrollformellistan, räknas trollformeln fortfarande som en druidtrollformel för dig."
       }
     },
-    "wild_shape_cr_1_2_or_below_no_flying_speed": {
-      "name": "Vild gestalt (1/2 utmaningspoäng eller lägre, ingen flyghastighet)",
-      "desc": {
-        "0": "Från och med nivå 2 kan du använda din handling till att magiskt anta formen av ett fä som du har sett tidigare. Du kan använda denna egenskap två gånger. Du får tillbaka förbrukade användningar när du fullbordar en kort eller lång vila.",
-        "1": "Din druidnivå avgör vilka fän du kan förvandla dig till, som visas i tabellen: Fägestalt. På nivå 2 till exempel, kan du förvandla dig till vilket fä som helst som har en utmaningsgrad på ¼ eller lägre och som inte har en flyg- eller simningshastighet.",
-        "2": "Du kan stanna kvar i en fägestalt i antalet timmar som är lika med halva din druidnivå (rundat nedåt). Du kan sedan återgå till din normala gestalt såvida du inte förbrukar ännu en användning av denna egenskap. Du kan återgå till din normala gestalt tidigare genom att använda en bonushandling under din tur. Du återgår automatiskt om du faller medvetslös, sjunker till 12 skadepoäng eller dör.",
-        "3": "Medan du är omvandlad gäller följande regler:",
-        "4": "- Din spelstatistik byts ut mot fäets statistik, men du behåller din positionering, personlighet och dina förmågepoäng i intelligens, vishet och karisma. Du behåller också dina förmåge- och räddningsslagsfärdigheter, utöver de som varelsen har. Om varelsen har samma tillägg som dig och bonusen i dess statistikblock är högre än din, använd varelsens bonus istället för din egen. Om varelsen har legendariska eller gömställe-handlingar, kan du inte använda dem.",
-        "5": "- När du omvandlas antar du fäets skadepoäng och läketärning. När du återgår till din normala gestalt återgår du till antalet skadepoäng du hade innan du omvandlades. Om du dock återgår som ett resultat av att ha sjunkit till 0 skadepoäng, medföljer överbliven skada till din normala gestalt. Om du till exempel tar 10 skada i djurgestalt och endast har 1 skadepoäng kvar, återgår du och tar 9 skada. Så länge den överblivna skadan inte sänker din normala gestalt till 0 skadepoäng, slås du inte medvetslös.",
-        "6": "- Du kan inte kasta trollformler och din förmåga att tala eller utföra handlingar som kräver händer är begränsade till fägestaltens kapacitet. Omvandling bryter inte din koncentration från en trollformel du redan kastat. Den hindrar dig inte heller från att utföra handlingar som är del av en trollformel, såsom ”åkalla blixt”, som du redan kastat.",
-        "7": "- Du behåller fördel på egenskaper inom din roll, sort eller annan källa och kan använda dem om den nya gestalten är fysiskt kapabel till det. Dock kan du inte använda dina specialsinnen, såsom mörkerseende, såvida inte din nya gestalt också har det sinnet.",
-        "8": "- Du väljer ifall din utrustning faller till marken i ditt utrymme, blir ett med din nya gestalt, eller bärs av den. Buren utrustning fungerar som vanligt, men spelledaren avgör om det är praktiskt för den nya gestalten att bära en del av rustningen baserat på varelsens form och storlek. Din rustning ändrar inte storlek eller form för att passa den nya gestalten och rustning som den nya gestalten inte kan bära måste antingen falla till marken eller bli ett med den. Rustning som blir ett med en gestalt har ingen effekt förrän du lämnar gestalten."
-      }
-    },
-    "druid_ability_score_improvement_1": {
-      "name": "Druid: Förbättring av förmågepoäng",
+    "druid_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "circle_spells_2": {
-      "name": "Cirkeltrollformler 2",
-      "desc": {
-        "0": "Din mystiska förbindelse till landet ger dig förmågan att kasta särskilda trollformler. På nivå 3, 5, 7 och 9 får du tillgång till cirkeltrollformler kopplade till den mark där du först blev en druid.",
-        "1": "Välj mark—arktisk, kust, öken, skog, grässlätt, berg eller träsk—och slå upp i den förknippade listan av trollformler.",
-        "2": "När du får tillgång till en cirkeltrollformel måste du alltid ha den förberedd och den räknas inte till det antal trollformler du kan förbereda per dag. Om du får tillgång till en trollformel som inte finns med i druidtrollformellistan, räknas trollformeln fortfarande som en druidtrollformel för dig."
       }
     },
     "druid_lands_stride": {
@@ -1867,64 +1621,16 @@
         "1": "Tilläggsvis har du fördel på räddningar mot växter som är skapade av magi eller manipulerade att hindra rörelse, likt de som skapats av en trollformeln “snärja”."
       }
     },
-    "circle_spells_3": {
-      "name": "Cirkeltrollformler 3",
-      "desc": {
-        "0": "Din mystiska förbindelse till landet ger dig förmågan att kasta särskilda trollformler. På nivå 3, 5, 7 och 9 får du tillgång till cirkeltrollformler kopplade till den mark där du först blev en druid.",
-        "1": "Välj mark—arktisk, kust, öken, skog, grässlätt, berg eller träsk—och slå upp i den förknippade listan av trollformler.",
-        "2": "När du får tillgång till en cirkeltrollformel måste du alltid ha den förberedd och den räknas inte till det antal trollformler du kan förbereda per dag. Om du får tillgång till en trollformel som inte finns med i druidtrollformellistan, räknas trollformeln fortfarande som en druidtrollformel för dig."
-      }
-    },
-    "wild_shape_cr_1_or_below": {
-      "name": "Vild gestalt (1 utmaningspoäng eller lägre)",
-      "desc": {
-        "0": "Från och med nivå 2 kan du använda din handling till att magiskt anta formen av ett fä som du har sett tidigare. Du kan använda denna egenskap två gånger. Du får tillbaka förbrukade användningar när du fullbordar en kort eller lång vila.",
-        "1": "Din druidnivå avgör vilka fän du kan förvandla dig till, som visas i tabellen: Fägestalt. På nivå 2 till exempel, kan du förvandla dig till vilket fä som helst som har en utmaningsgrad på ¼ eller lägre och som inte har en flyg- eller simningshastighet.",
-        "2": "Du kan stanna kvar i en fägestalt i antalet timmar som är lika med halva din druidnivå (rundat nedåt). Du kan sedan återgå till din normala gestalt såvida du inte förbrukar ännu en användning av denna egenskap. Du kan återgå till din normala gestalt tidigare genom att använda en bonushandling under din tur. Du återgår automatiskt om du faller medvetslös, sjunker till 12 skadepoäng eller dör.",
-        "3": "Medan du är omvandlad gäller följande regler:",
-        "4": "- Din spelstatistik byts ut mot fäets statistik, men du behåller din positionering, personlighet och dina förmågepoäng i intelligens, vishet och karisma. Du behåller också dina förmåge- och räddningsslagsfärdigheter, utöver de som varelsen har. Om varelsen har samma tillägg som dig och bonusen i dess statistikblock är högre än din, använd varelsens bonus istället för din egen. Om varelsen har legendariska eller gömställe-handlingar, kan du inte använda dem.",
-        "5": "- När du omvandlas antar du fäets skadepoäng och läketärning. När du återgår till din normala gestalt återgår du till antalet skadepoäng du hade innan du omvandlades. Om du dock återgår som ett resultat av att ha sjunkit till 0 skadepoäng, medföljer överbliven skada till din normala gestalt. Om du till exempel tar 10 skada i djurgestalt och endast har 1 skadepoäng kvar, återgår du och tar 9 skada. Så länge den överblivna skadan inte sänker din normala gestalt till 0 skadepoäng, slås du inte medvetslös.",
-        "6": "- Du kan inte kasta trollformler och din förmåga att tala eller utföra handlingar som kräver händer är begränsade till fägestaltens kapacitet. Omvandling bryter inte din koncentration från en trollformel du redan kastat. Den hindrar dig inte heller från att utföra handlingar som är del av en trollformel, såsom ”åkalla blixt”, som du redan kastat.",
-        "7": "- Du behåller fördel på egenskaper inom din roll, sort eller annan källa och kan använda dem om den nya gestalten är fysiskt kapabel till det. Dock kan du inte använda dina specialsinnen, såsom mörkerseende, såvida inte din nya gestalt också har det sinnet.",
-        "8": "- Du väljer ifall din utrustning faller till marken i ditt utrymme, blir ett med din nya gestalt, eller bärs av den. Buren utrustning fungerar som vanligt, men spelledaren avgör om det är praktiskt för den nya gestalten att bära en del av rustningen baserat på varelsens form och storlek. Din rustning ändrar inte storlek eller form för att passa den nya gestalten och rustning som den nya gestalten inte kan bära måste antingen falla till marken eller bli ett med den. Rustning som blir ett med en gestalt har ingen effekt förrän du lämnar gestalten."
-      }
-    },
-    "druid_ability_score_improvement_2": {
-      "name": "Druid: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "circle_spells_4": {
-      "name": "Cirkeltrollformler 4",
-      "desc": {
-        "0": "Din mystiska förbindelse till landet ger dig förmågan att kasta särskilda trollformler. På nivå 3, 5, 7 och 9 får du tillgång till cirkeltrollformler kopplade till den mark där du först blev en druid.",
-        "1": "Välj mark—arktisk, kust, öken, skog, grässlätt, berg eller träsk—och slå upp i den förknippade listan av trollformler.",
-        "2": "När du får tillgång till en cirkeltrollformel måste du alltid ha den förberedd och den räknas inte till det antal trollformler du kan förbereda per dag. Om du får tillgång till en trollformel som inte finns med i druidtrollformellistan, räknas trollformeln fortfarande som en druidtrollformel för dig."
-      }
-    },
     "natures_ward": {
       "name": "Naturens vakt",
       "desc": {
         "0": "När du uppnår nivå 10 kan du inte bli förtrollad eller skrämd av varken elementära eller fän och är immun mot gift och sjukdom."
       }
     },
-    "druid_ability_score_improvement_3": {
-      "name": "Druid: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "natures_sanctuary": {
       "name": "Naturens fristad",
       "desc": {
         "0": "När du uppnår nivå 14 känner varelser av den naturliga världen av din koppling till naturen och blir tveksamma till att attackera dig. När ett fä eller en växtvarelse attackerar dig måste den varelsen utföra ett vishetsräddningsslag mot svårighetsgraden av din druids trollformelräddnings. På ett misslyckat slag måste varelsen välja ett annat mål eller så missar de attacken automatiskt. För en lyckad räddning är varelsen immun mot denna effekt i 24 timmar. Varelsen är medveten om denna effekt innan den utför sin attack mot dig."
-      }
-    },
-    "druid_ability_score_improvement_4": {
-      "name": "Druid: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "druid_timeless_body": {
@@ -1937,12 +1643,6 @@
       "name": "Fätrollformler",
       "desc": {
         "0": "Från och med nivå 18 kan du kasta flera av dina druidtrollformler genom gestalter du antar genom att använda vild gestalt. Du kan utföra de kroppsliga och muntliga komponenterna av en druidtrollformel i en fägestalt, men du kan inte bruka materiella komponenter."
-      }
-    },
-    "druid_ability_score_improvement_5": {
-      "name": "Druid: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "archdruid": {
@@ -1988,7 +1688,7 @@
         "0": "När en varelse du kan se attackerar ett mål utöver dig själv inom 1,5 meter kan du använda din reaktion för att orsaka nackdel på attackslaget. Du måste bruka en sköld."
       }
     },
-    "fighter_fighting_style_two_weapon_fighting": {
+    "fighting_style_twoweapon_fighting": {
       "name": "Stridsteknik: Strid med två vapen",
       "desc": {
         "0": "När du deltar i en dubbel vapenstrid kan du addera ditt förmågetillägg till skadan för den andra attacken."
@@ -2000,8 +1700,8 @@
         "0": "Du har en begränsad källa av uthållighet som du kan ta ifrån för att skydda dig själv från skada. Under din tur kan du använda en bonushandling för att få tillbaka skadepoäng lika med 1d10 + din slagskämpenivå. När du använt denna egenskap måste du fullborda en kort eller lång vila innan du kan använda den igen."
       }
     },
-    "action_surge_1_use": {
-      "name": "Handlingskraft (1 användning)",
+    "action_surge": {
+      "name": "Handlingskraft",
       "desc": {
         "0": "Från och med nivå 2 kan du för ett ögonblick pressa dig själv över dina normala gränser. När det är din tur kan du utföra ytterligare en handling utöver din vanliga handling med möjlighet till en bonushandling.",
         "1": "När du använt denna egenskap måste du fullborda en kort eller lång vila innan du kan använda den igen. Från och med nivå 17 kan du använda den två gånger innan en vila, men endast en gång under samma tur."
@@ -2019,22 +1719,16 @@
         "0": "Från och med att du väljer denna arketyp på nivå tre räknas dina vapenattacker som en kritisk träff när du slår 19 eller 20."
       }
     },
-    "fighter_ability_score_improvement_1": {
-      "name": "Slagskämpe: Förbättring av förmågepoäng",
+    "fighter_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4 och återigen på nivå 6, 8 12, 14 och 19 kan du öka ett valfritt förmågepoäng med 2, eller så kan du öka två valfria förmågepoäng"
       }
     },
-    "extra_attack_1": {
-      "name": "Extraattack 1",
+    "extra_attack": {
+      "name": "Extraattack",
       "desc": {
         "0": "Från och med nivå 5 kan du attackera två gånger istället för en varje gång du utför en attackhandling under din tur. Antalet attacker ökar till tre när du når nivå 11 inom denna roll och till fyra när du når nivå 10."
-      }
-    },
-    "fighter_ability_score_improvement_2": {
-      "name": "Slagskämpe: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 6, 8 12, 14 och 19 kan du öka ett valfritt förmågepoäng med 2, eller så kan du öka två valfria förmågepoäng"
       }
     },
     "remarkable_athlete": {
@@ -2043,14 +1737,8 @@
         "0": "Från och med nivå 7 kan du addera halva din färdighetsbonus (avrundad uppåt) till vilken styrke-, skicklighets- eller tålighetskontroll du utför som helst där du inte redan använder din färdighetsbonus. När du utför ett springande längdhopp ökar längden du kan täcka med antalet meter som är lika med ditt styrketillägg."
       }
     },
-    "fighter_ability_score_improvement_3": {
-      "name": "Slagskämpe: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 6, 8 12, 14 och 19 kan du öka ett valfritt förmågepoäng med 2, eller så kan du öka två valfria förmågepoäng"
-      }
-    },
-    "indomitable_1_use": {
-      "name": "Oövervinnlig (1 användning)",
+    "indomitable": {
+      "name": "Oövervinnlig",
       "desc": {
         "0": "Från och med nivå 9 kan du slå om ett räddningsslag som du misslyckas med. Om du gör detta måste du använda det nya slaget och kan inte använda denna egenskap igen förrän du fullbordat en lång vila. Du kan använda denna egenskap upp till två gånger innan du behöver fullborda en lång vila på nivå 3, och upp till tre gånger på nivå 17."
       }
@@ -2061,71 +1749,16 @@
         "0": "På nivå 10 kan du välja ett andra alternativ från rollegenskapen “stridsteknik”."
       }
     },
-    "extra_attack_2": {
-      "name": "Extraattack 2",
-      "desc": {
-        "0": "Från och med nivå 5 kan du attackera två gånger istället för en varje gång du utför en attackhandling under din tur. Antalet attacker ökar till tre när du når nivå 11 inom denna roll och till fyra när du når nivå 10."
-      }
-    },
-    "fighter_ability_score_improvement_4": {
-      "name": "Slagskämpe: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 6, 8 12, 14 och 19 kan du öka ett valfritt förmågepoäng med 2, eller så kan du öka två valfria förmågepoäng"
-      }
-    },
-    "indomitable_2_uses": {
-      "name": "Oövervinnlig (2 användningar)",
-      "desc": {
-        "0": "Från och med nivå 9 kan du slå om ett räddningsslag som du misslyckas med. Om du gör detta måste du använda det nya slaget och kan inte använda denna egenskap igen förrän du fullbordat en lång vila. Du kan använda denna egenskap upp till två gånger innan du behöver fullborda en lång vila på nivå 3, och upp till tre gånger på nivå 17."
-      }
-    },
-    "fighter_ability_score_improvement_5": {
-      "name": "Slagskämpe: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 6, 8 12, 14 och 19 kan du öka ett valfritt förmågepoäng med 2, eller så kan du öka två valfria förmågepoäng"
-      }
-    },
     "superior_critical": {
       "name": "Överlägsen kritisk",
       "desc": {
         "0": "Från och med nivå 15 räknas dina vapenattacker som en kritisk träff på slag mellan 18-20."
       }
     },
-    "fighter_ability_score_improvement_6": {
-      "name": "Slagskämpe: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 6, 8 12, 14 och 19 kan du öka ett valfritt förmågepoäng med 2, eller så kan du öka två valfria förmågepoäng"
-      }
-    },
-    "action_surge_2_uses": {
-      "name": "Handlingskraft (2 användningar)",
-      "desc": {
-        "0": "Från och med nivå 2 kan du för ett ögonblick pressa dig själv över dina normala gränser. När det är din tur kan du utföra ytterligare en handling utöver din vanliga handling med möjlighet till en bonushandling.",
-        "1": "När du använt denna egenskap måste du fullborda en kort eller lång vila innan du kan använda den igen. Från och med nivå 17 kan du använda den två gånger innan en vila, men endast en gång under samma tur."
-      }
-    },
-    "indomitable_3_uses": {
-      "name": "Oövervinnlig (3 användningar)",
-      "desc": {
-        "0": "Från och med nivå 9 kan du slå om ett räddningsslag som du misslyckas med. Om du gör detta måste du använda det nya slaget och kan inte använda denna egenskap igen förrän du fullbordat en lång vila. Du kan använda denna egenskap upp till två gånger innan du behöver fullborda en lång vila på nivå 3, och upp till tre gånger på nivå 17."
-      }
-    },
     "survivor": {
       "name": "Överlevare",
       "desc": {
         "0": "På nivå 18 når du toppen av motståndskraft inom strid. I början av varje tur får du tillbaka skadepoäng lika med 5 + ditt tålighetstillägg om du inte har mer än hälften av dina skadepoäng kvar. Du får inte denna fördel om du har 0 skadepoäng."
-      }
-    },
-    "fighter_ability_score_improvement_7": {
-      "name": "Slagskämpe: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 6, 8 12, 14 och 19 kan du öka ett valfritt förmågepoäng med 2, eller så kan du öka två valfria förmågepoäng"
-      }
-    },
-    "extra_attack_3": {
-      "name": "Extraattack 3",
-      "desc": {
-        "0": "Från och med nivå 5 kan du attackera två gånger istället för en varje gång du utför en attackhandling under din tur. Antalet attacker ökar till tre när du når nivå 11 inom denna roll och till fyra när du når nivå 10."
       }
     },
     "monk_unarmored_defense": {
@@ -2173,7 +1806,7 @@
         "0": "Du kan spendera 1 ki-poäng för att utföra handlingen ”dra sig ur” eller ”rusa” som en bonushandling under din tur och ditt hoppavstånd dubblas under omgången."
       }
     },
-    "unarmored_movement_1": {
+    "unarmored_movement": {
       "name": "Orustad rörelse 1",
       "desc": {
         "0": "Från och med nivå 2 ökar din hastighet med 3 meter när du inte bär rustning eller brukar en sköld. Din bonus ökar när du når vissa munknivåer som visas i munktabellen).",
@@ -2202,8 +1835,8 @@
         "3": "- Det kan inte utföra reaktioner förrän du avslutat din nästa tur."
       }
     },
-    "monk_ability_score_improvement_1": {
-      "name": "Munk: Förbättring av förmågepoäng",
+    "monk_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
@@ -2250,19 +1883,6 @@
         "0": "Från och med nivå 7 kan du använda din handling till att avsluta en effekt på dig själv som får dig att vara förtrollad eller skrämd."
       }
     },
-    "monk_ability_score_improvement_2": {
-      "name": "Munk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "unarmored_movement_2": {
-      "name": "Orustad rörelse 2",
-      "desc": {
-        "0": "Från och med nivå 2 ökar din hastighet med 3 meter när du inte bär rustning eller brukar en sköld. Din bonus ökar när du når vissa munknivåer som visas i munktabellen).",
-        "1": "På nivå 9 får du förmågan att röra dig längs med vertikala ytor och över vätskor under din tur utan att falla under förflyttningen."
-      }
-    },
     "purity_of_body": {
       "name": "Kroppslig renhet",
       "desc": {
@@ -2273,12 +1893,6 @@
       "name": "Sinneslugn",
       "desc": {
         "0": "Från och med nivå 11 kan du försjunka i en speciell meditation som omringar dig med en aura av stillhet. I slutet av en lång vila får du effekten av trollformeln ”fristad” som varar till början av din nästa långa vila (trollformeln kan avslutas som vanligt). Räddningssvårighetsgraden för trollformeln är lika med 8 + ditt tillägg för vishet + din färdighetsbonus."
-      }
-    },
-    "monk_ability_score_improvement_3": {
-      "name": "Munk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "tongue_of_the_sun_and_moon": {
@@ -2300,12 +1914,6 @@
         "0": "På nivå 15 upprätthåller din ki dig så att du inte längre lider av några svagheter på grund av hög ålder och du kan inte åldras på magiskt vis. Dock kan du fortfarande dö av hög ålder, men du behöver inte längre mat eller vatten."
       }
     },
-    "monk_ability_score_improvement_4": {
-      "name": "Munk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "quivering_palm": {
       "name": "Skälvande handflata",
       "desc": {
@@ -2318,12 +1926,6 @@
       "desc": {
         "0": "Från och med nivå 18 kan du använda din handling till att spendera 4 ki-poäng för att bli osynlig i 1 minut. Under den tiden är du också resistent mot all skada utom våldsattacker.",
         "1": "Tilläggsvis kan du spendera 8 ki-poäng för att kasta trollformeln “astral projektion” utan att behöva materiella komponenter. När du gör detta kan du inte ta med dig några andra varelser."
-      }
-    },
-    "monk_ability_score_improvement_5": {
-      "name": "Munk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "perfect_self": {
@@ -2432,8 +2034,8 @@
         "1": "En omvänd varelse måste tillägna sin tur till att försöka flytta sig så långt bort från dig som möjligt och kan inte självmant flytta sig till ett utrymme inom 9 meter av dig. Den kan dessutom inte utföra reaktioner. Den kan endast använda handlingen “rusa” eller försöka fria sig från en effekt som hindrar den från att röra sig. Om det inte finns plats att röra sig kan varelsen använda handlingen “smita undan”."
       }
     },
-    "paladin_ability_score_improvement_1": {
-      "name": "Tempelriddare: Förbättring av förmågepoäng",
+    "paladin_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
@@ -2458,12 +2060,6 @@
         "1": "På nivå 18 ökar denna auras räckvidd till 9 meter."
       }
     },
-    "paladin_ability_score_improvement_2": {
-      "name": "Tempelriddare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "aura_of_courage": {
       "name": "Modig aura",
       "desc": {
@@ -2475,12 +2071,6 @@
       "name": "Förbättrat gudomligt straff",
       "desc": {
         "0": "Vid nivå 11 är du så full av rättfärdig makt att alla dina slag med närstridsvapen bär himmelsk kraft. När du träffar en varelse med ett närstridsvapen tar varelsen en extra 1d8 skada. Om du dessutom använder ditt gudomliga straff med en attack lägger du till denna skada till extraskadan som ditt gudomliga straff gör."
-      }
-    },
-    "paladin_ability_score_improvement_3": {
-      "name": "Tempelriddare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "cleansing_touch": {
@@ -2496,22 +2086,10 @@
         "0": "Från och med nivå 15 är du alltid skyddad av effekterna från onda och goda trollformler."
       }
     },
-    "paladin_ability_score_improvement_4": {
-      "name": "Tempelriddare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "aura_improvements": {
       "name": "Förbättrad aura",
       "desc": {
         "0": "På nivå 18 ökar din auras räckvid till 9 meter."
-      }
-    },
-    "paladin_ability_score_improvement_5": {
-      "name": "Tempelriddare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "holy_nimbus": {
@@ -2522,8 +2100,8 @@
         "2": "Under denna tid har du även fördel på räddningar mot trollformler kastade av djävlar eller odöda."
       }
     },
-    "favored_enemy_1_type": {
-      "name": "Favoriserad fiende (1 typ)",
+    "favored_enemy": {
+      "name": "Favoriserad fiende",
       "desc": {
         "0": "Från och med nivå 1 har du en omfattande erfarenhet att studera, spåra, jaga och även tala till en särskild typ av fiende.",
         "1": "Välj en typ av favoriserad fiende: avvikelser, fän, himmelska varelser, levande föremål, drakar, elementärer, fän, djävlar, jättar, monster, slime, växter och odöda. Alternativt kan du välja två sorter av humanoider (såsom gnoller och orcher) som favoriserade fiender.",
@@ -2532,8 +2110,8 @@
         "4": "Du väljer ytterligare en favoriserad fiende, samt ett förknippad språk på nivå 6 och nivå 14. När du når högre nivåer borde dina val reflektera den typ av monster du har mött på dina äventyr."
       }
     },
-    "natural_explorer_1_terrain_type": {
-      "name": "Naturlig upptäckare (1 typ av terräng)",
+    "natural_explorer": {
+      "name": "Naturlig upptäckare",
       "desc": {
         "0": "Du är välbekant med en typ av naturlig omgivning och är erfaren kring att färdas och överleva i sådana regioner. Välj en typ av favoriserad terräng: arktisk, kust, öken, skog, grässlätt, berg eller träsk. När du gör en intelligens- eller vishetskontroll kopplad till din favoriserade terräng, dubblas din färdighetsbonus ifall du använder en förmåga som du har färdighet inom.",
         "1": "När du färdas i en timme eller mer genom din favoriserade terräng får du följande fördelar:",
@@ -2568,12 +2146,6 @@
       "name": "Stridsteknik: Duell",
       "desc": {
         "0": "När du använder ett närstridsvapen i ena handen och inga andra vapen, får du en +2 bonus för skadeslag med det vapnet."
-      }
-    },
-    "ranger_fighting_style_two_weapon_fighting": {
-      "name": "Stridsteknik: Strid med två vapen",
-      "desc": {
-        "0": "När du slår en 1 eller 2 med en tärning för skada för en attack du utför med ett närstridsvapen som du brukar med två händer kan du slå om tärningen. Du måste använda det nya slaget även om det nya slaget är 1 eller 2. Vapnet måste ha någon av egenskaperna \"tvåhands-\" eller \"mångsidigt\" för att du ska kunna ta del av denna fördel."
       }
     },
     "spellcasting_ranger": {
@@ -2621,8 +2193,8 @@
         "0": "Från och med nivå 3 kan du använda din handling till att förbruka ett skogvaktartrollformelutrymme för att fokusera ditt medvetande på området runt dig. I en minut per trollformelutrymmets nivå som du förbrukar, kan du känna av ifall följande typer av varelser befinner sig inom 1,6 kilometer av dig (eller upp till 9,6 kilometer om du befinner dig i din favoriserade terräng): avvikelser, himmelska varelser, drakar, elementärer, fän, djävlar och odöda. Denna egenskap avslöjar inte varelsernas position eller antal."
       }
     },
-    "ranger_ability_score_improvement_1": {
-      "name": "Skogvaktare: Förbättring av förmågepoäng",
+    "ranger_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
@@ -2631,30 +2203,6 @@
       "name": "Extraattack",
       "desc": {
         "0": "Från och med nivå 5 kan du attackera två gånger istället för en varje gång du utför en attackhandling under din tur. Antalet attacker ökar till tre när du når nivå 11 inom denna roll och till fyra när du når nivå 10."
-      }
-    },
-    "favored_enemy_2_types": {
-      "name": "Favoriserad fiende (2 typer)",
-      "desc": {
-        "0": "Från och med nivå 1 har du en omfattande erfarenhet att studera, spåra, jaga och även tala till en särskild typ av fiende.",
-        "1": "Välj en typ av favoriserad fiende: avvikelser, fän, himmelska varelser, levande föremål, drakar, elementärer, fän, djävlar, jättar, monster, slime, växter och odöda. Alternativt kan du välja två sorter av humanoider (såsom gnoller och orcher) som favoriserade fiender.",
-        "2": "Du har fördel på vishetskontroller (överlevnad) för att spåra dina favoriserade fiender, även under intelligenskontroller för att återkalla information om dem.",
-        "3": "När du erhåller denna egenskap kan du även lära dig ett valfritt språk som talas av din favoriserade fiende, om de talar ett över huvud taget.",
-        "4": "Du väljer ytterligare en favoriserad fiende, samt ett förknippad språk på nivå 6 och nivå 14. När du når högre nivåer borde dina val reflektera den typ av monster du har mött på dina äventyr."
-      }
-    },
-    "natural_explorer_2_terrain_types": {
-      "name": "Naturlig upptäckare (2 typer av terräng)",
-      "desc": {
-        "0": "Du är välbekant med en typ av naturlig omgivning och är erfaren kring att färdas och överleva i sådana regioner. Välj en typ av favoriserad terräng: arktisk, kust, öken, skog, grässlätt, berg eller träsk. När du gör en intelligens- eller vishetskontroll kopplad till din favoriserade terräng, dubblas din färdighetsbonus ifall du använder en förmåga som du har färdighet inom.",
-        "1": "När du färdas i en timme eller mer genom din favoriserade terräng får du följande fördelar:",
-        "2": "- Svår terräng saktar inte ner din grupps färd.",
-        "3": "- Din grupp kan inte gå vilse förutom av magiska men.",
-        "4": "- Även fast du deltar i en annan aktivitet under din färd (såsom födosök, navigering eller spårning), är du fortfarande på din vakt efter fara.",
-        "5": "- Om du färdas kan du röra dig varsamt i normal takt.",
-        "6": "- Du hittar dubbelt så mycket mat än normalt när du söker efter föda.",
-        "7": "- När du spårar andra varelser kan du även ta reda på deras exakta antal, deras storlek och hur länge sedan de passerade genom området.",
-        "8": "Du kan välja ytterligare favoriserade typer av terräng på nivå 6 och 10"
       }
     },
     "defensive_tactics": {
@@ -2684,31 +2232,11 @@
         "0": "Du har fördel på räddningar mot att bli skrämd."
       }
     },
-    "ranger_ability_score_improvement_2": {
-      "name": "Skogvaktare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "ranger_lands_stride": {
       "name": "Markkliv",
       "desc": {
         "0": "Från och med nivå 8 kostar det dig ingen extra rörelse att ta dig genom icke-magisk terräng. Du kan också passera genom icke-magiska växter utan att saktas ner eller ta skada på grund av dem om de har taggar, törnar eller utgör liknande fara.",
         "1": "Tilläggsvis har du fördel på räddningsslag mot växter som är skapade av magi eller manipulerade att hindra rörelse, såsom de som skapats av trollformeln ”snärja”."
-      }
-    },
-    "natural_explorer_3_terrain_types": {
-      "name": "Naturlig upptäckare (3 typer av terräng)",
-      "desc": {
-        "0": "Du är välbekant med en typ av naturlig omgivning och är erfaren kring att färdas och överleva i sådana regioner. Välj en typ av favoriserad terräng: arktisk, kust, öken, skog, grässlätt, berg eller träsk. När du gör en intelligens- eller vishetskontroll kopplad till din favoriserade terräng, dubblas din färdighetsbonus ifall du använder en förmåga som du har färdighet inom.",
-        "1": "När du färdas i en timme eller mer genom din favoriserade terräng får du följande fördelar:",
-        "2": "- Svår terräng saktar inte ner din grupps färd.",
-        "3": "- Din grupp kan inte gå vilse förutom av magiska men.",
-        "4": "- Även fast du deltar i en annan aktivitet under din färd (såsom födosök, navigering eller spårning), är du fortfarande på din vakt efter fara.",
-        "5": "- Om du färdas kan du röra dig varsamt i normal takt.",
-        "6": "- Du hittar dubbelt så mycket mat än normalt när du söker efter föda.",
-        "7": "- När du spårar andra varelser kan du även ta reda på deras exakta antal, deras storlek och hur länge sedan de passerade genom området.",
-        "8": "Du kan välja ytterligare favoriserade typer av terräng på nivå 6 och 10"
       }
     },
     "hide_in_plain_sight": {
@@ -2736,22 +2264,6 @@
       "name": "Multiattack: Virvelvindsattack",
       "desc": {
         "0": "Du kan använda din handling till att utföra en närstridsattack mot obegränsat antal varelser inom 1,5 meter av dig, med ett separat attackslag för varje mål."
-      }
-    },
-    "ranger_ability_score_improvement_3": {
-      "name": "Skogvaktare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "favored_enemy_3_enemies": {
-      "name": "Favoriserad fiende (3 fiender)",
-      "desc": {
-        "0": "Från och med nivå 1 har du en omfattande erfarenhet att studera, spåra, jaga och även tala till en särskild typ av fiende.",
-        "1": "Välj en typ av favoriserad fiende: avvikelser, fän, himmelska varelser, levande föremål, drakar, elementärer, fän, djävlar, jättar, monster, slime, växter och odöda. Alternativt kan du välja två sorter av humanoider (såsom gnoller och orcher) som favoriserade fiender.",
-        "2": "Du har fördel på vishetskontroller (överlevnad) för att spåra dina favoriserade fiender, även under intelligenskontroller för att återkalla information om dem.",
-        "3": "När du erhåller denna egenskap kan du även lära dig ett valfritt språk som talas av din favoriserade fiende, om de talar ett över huvud taget.",
-        "4": "Du väljer ytterligare en favoriserad fiende, samt ett förknippad språk på nivå 6 och nivå 14. När du når högre nivåer borde dina val reflektera den typ av monster du har mött på dina äventyr."
       }
     },
     "vanish": {
@@ -2787,23 +2299,11 @@
         "0": "När en angripare som du kan se träffar dig med en attack, kan du använda din reaktion till att halvera angriparens skada på dig."
       }
     },
-    "ranger_ability_score_improvement_4": {
-      "name": "Skogvaktare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "feral_senses": {
       "name": "Vilda sinnen",
       "desc": {
         "0": "På nivå 18 erhåller du övernaturliga sinnen som hjälper dig att slåss mot varelser du inte kan se. När du attackerar en varelse du inte kan se ger din oförmåga att se den inte nackdel på dina attackslag.",
         "1": "Du är även medveten om var den osynliga varalsen befinner dig inom 10 meter från dig, givet att varelsen inte är dold för dig och du inte är förblindad eller döv."
-      }
-    },
-    "ranger_ability_score_improvement_5": {
-      "name": "Skogvaktare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "foe_slayer": {
@@ -2812,7 +2312,7 @@
         "0": "På nivå 20 blir du en oöverträffad jägare av dina fiender. Under varje tur som är din kan du addera ditt tillägg för vishet till attackslaget eller skadeslaget för en attack du utför mot en av dina favoriserade fiender. Du kan välja att använda denna egenskap före eller efter slaget, men innan något av slagets effekter börjar gälla."
       }
     },
-    "rogue_expertise_1": {
+    "rogue_expertise": {
       "name": "Expertis",
       "desc": {
         "0": "På nivå 1 väljer du två förmågefärdigheter och din färdighet med tjuveriredskap. Din färdighetsbonus dubblas för skicklighetskontroller du utför som använder någon utav de valda färdigheterna.",
@@ -2852,14 +2352,14 @@
         "0": "Från och med nivå 3 kan du använda bonushandlingen som tilldelas av din listiga handling för att utföra en fingerfärdighetskontroll. Använd dina tjuveriredskap för att desarmera en fälla eller lirka upp ett lås, eller utför handlingen “använd föremål”."
       }
     },
-    "second_story_work": {
+    "secondstory_work": {
       "name": "Arbete på andra våningen",
       "desc": {
         "0": "När du väljer denna arketyp på nivå 3 får du förmågan att klättra snabbare än normalt. Klättring kostar dig inte längre extra rörelse.",
         "1": "Tilläggsvis, när du utför ett löpande hopp, ökar avståndet du täcker med det antal meter lika med ditt skicklighetstillägg."
       }
     },
-    "rogue_ability_score_improvement_1": {
+    "rogue_ability_score_improvement": {
       "name": "Skurk: Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4 och återigen på nivå 8, 10, 12, 16 och 19, kan du öka ett av dina förmågepoäng med 2, eller så kan du öka två förmågepoäng med 1. Som vanligt kan du inte öka en förmågepoäng över 20 med denna egenskap."
@@ -2871,23 +2371,10 @@
         "0": "Från och med nivå 5, när en angripare som du kan se träffar dig med en attack kan du använda din reaktion för att halvera attackens skada mot dig."
       }
     },
-    "rogue_expertise_2": {
-      "name": "Expertis",
-      "desc": {
-        "0": "På nivå 1 väljer du två förmågefärdigheter och din färdighet med tjuveriredskap. Din färdighetsbonus dubblas för skicklighetskontroller du utför som använder någon utav de valda färdigheterna.",
-        "1": "På nivå 6 kan du välja två eller fler av dina färdigheter (inom förmågor eller med tjuveriredskap) för att få denna fördel."
-      }
-    },
     "rogue_evasion": {
       "name": "Undvikande",
       "desc": {
         "0": "På nivå 7 kan du lätt smita undan från vissa områdeseffekter, så som en röd drakes eldiga andedräkt eller trollformeln ”isstorm”. När du utsätts för en effekt som tillåter dig att utföra ett skicklighetsräddningsslag för att endast ta hälften av skadan, kan du istället undvika att ta någon skada alls om du lyckas med räddningen och endast ta hälften av skadan om du misslyckas."
-      }
-    },
-    "rogue_ability_score_improvement_2": {
-      "name": "Skurk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 8, 10, 12, 16 och 19, kan du öka ett av dina förmågepoäng med 2, eller så kan du öka två förmågepoäng med 1. Som vanligt kan du inte öka en förmågepoäng över 20 med denna egenskap."
       }
     },
     "supreme_sneak": {
@@ -2896,22 +2383,10 @@
         "0": "Från och med nivå 9 har du fördel på en varsamhetskontroll om du inte rör dig mer än halva din hastighet under samma tur."
       }
     },
-    "rogue_ability_score_improvement_3": {
-      "name": "Skurk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 8, 10, 12, 16 och 19, kan du öka ett av dina förmågepoäng med 2, eller så kan du öka två förmågepoäng med 1. Som vanligt kan du inte öka en förmågepoäng över 20 med denna egenskap."
-      }
-    },
     "reliable_talent": {
       "name": "Pålitlig talang",
       "desc": {
         "0": "Från och med nivå 11 har du finslipat dina valda förmågor tills de närmar sig perfektion. Varje gång du utför en förmågekontroll som tillåter dig lägga till din färdighetsbonus, kan du behandla ett d20 slag på 9 eller lägre som 10."
-      }
-    },
-    "rogue_ability_score_improvement_4": {
-      "name": "Skurk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 8, 10, 12, 16 och 19, kan du öka ett av dina förmågepoäng med 2, eller så kan du öka två förmågepoäng med 1. Som vanligt kan du inte öka en förmågepoäng över 20 med denna egenskap."
       }
     },
     "use_magic_device": {
@@ -2932,12 +2407,6 @@
         "0": "Vid nivå 15 har du anskaffat förbättrad mental styrka. Du uppnår färdighet i vishetsräddningsslag."
       }
     },
-    "rogue_ability_score_improvement_5": {
-      "name": "Skurk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 8, 10, 12, 16 och 19, kan du öka ett av dina förmågepoäng med 2, eller så kan du öka två förmågepoäng med 1. Som vanligt kan du inte öka en förmågepoäng över 20 med denna egenskap."
-      }
-    },
     "thiefs_reflexes": {
       "name": "Tjuvreflexer",
       "desc": {
@@ -2948,12 +2417,6 @@
       "name": "Svårfångad",
       "desc": {
         "0": "Från och med nivå 18 är du så flyktig att angripare sällan får övertag. Inga attackslag har fördel mot dig så länge du inte är invalidiserad."
-      }
-    },
-    "rogue_ability_score_improvement_6": {
-      "name": "Skurk: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4 och återigen på nivå 8, 10, 12, 16 och 19, kan du öka ett av dina förmågepoäng med 2, eller så kan du öka två förmågepoäng med 1. Som vanligt kan du inte öka en förmågepoäng över 20 med denna egenskap."
       }
     },
     "stroke_of_luck": {
@@ -2983,70 +2446,70 @@
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_black___acid_damage": {
+    "dragon_ancestor_black__acid_damage": {
       "name": "Drakförfäder: Svart - Syraskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_blue___lightning_damage": {
+    "dragon_ancestor_blue__lightning_damage": {
       "name": "Drakförfäder: Blå - Åskskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_brass___fire_damage": {
+    "dragon_ancestor_brass__fire_damage": {
       "name": "Drakförfäder: Mässing - Eldskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_bronze___lightning_damage": {
+    "dragon_ancestor_bronze__lightning_damage": {
       "name": "Drakförfäder: Brons - Åskskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_copper___acid_damage": {
+    "dragon_ancestor_copper__acid_damage": {
       "name": "Drakförfäder: Koppar - Syraskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_gold___fire_damage": {
+    "dragon_ancestor_gold__fire_damage": {
       "name": "Drakförfäder: Guld - Eldskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_green___poison_damage": {
+    "dragon_ancestor_green__poison_damage": {
       "name": "Drakförfäder: Grön - Giftskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_red___fire_damage": {
+    "dragon_ancestor_red__fire_damage": {
       "name": "Drakförfäder: Röd - Eldskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_silver___cold_damage": {
+    "dragon_ancestor_silver__cold_damage": {
       "name": "Drakförfäder: Silver - Köldskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
         "1": "Du kan tala, läsa och skriva drakoniska. Varje gång du utför en karismakontroll när du interagerar med drakar dubblas din färdighetsbonus om den gäller för kontrollen."
       }
     },
-    "dragon_ancestor_white___cold_damage": {
+    "dragon_ancestor_white__cold_damage": {
       "name": "Drakförfäder: Vit - Köldskada",
       "desc": {
         "0": "På nivå 1 väljer du en typ av drake som din förfader. Skadetypen som förknippas med varje drake används av egenskaper du uppnår senare.",
@@ -3081,7 +2544,7 @@
         "0": "Som en bonushandling under din tur kan du förbruka ett trollformelutrymme och få ett antal trollkonstpoäng som är lika med utrymmets nivå."
       }
     },
-    "metamagic_1": {
+    "metamagic": {
       "name": "Metamagi",
       "desc": {
         "0": "På nivå 3 tilldelas du förmågan att anpassa dina trollformler utefter dina behov. Du tilldelas två av följande valfria metamagiska alternativ. Du tilldelas ytterligare en på nivå 10 samt nivå 17.",
@@ -3139,8 +2602,8 @@
         "1": "För att vara behörig måste en trollformel vara oduglig till att sikta på fler än en varelse på trollformelns nuvarande nivå. Till exempel, ”magisk missil” och ”brännhet strålning” är inte behöriga, men ”froststrålning” och ”kromatiskt klot” är det."
       }
     },
-    "sorcerer_ability_score_improvement_1": {
-      "name": "Trollkonstnär: Förbättring av förmågepoäng",
+    "sorcerer_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
@@ -3151,25 +2614,6 @@
         "0": "Men start på nivå 6, när du kastar en trollformel som utdelar skada av den typ som förknippas med din drakoniska härkomst kan du addera ditt tillägg för karisma till ett skadeslag för den trollformeln. Samtidigt kan du spendera 1 trollkonstpoäng för att få bli resistent mot den skadetypen under en timme."
       }
     },
-    "sorcerer_ability_score_improvement_2": {
-      "name": "Trollkonstnär: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "metamagic_2": {
-      "name": "Metamagi",
-      "desc": {
-        "0": "På nivå 3 tilldelas du förmågan att anpassa dina trollformler utefter dina behov. Du tilldelas två av följande valfria metamagiska alternativ. Du tilldelas ytterligare en på nivå 10 samt nivå 17.",
-        "1": "Du kan endast använda en metamagiskt alternativ på en trollformel när du kastar den, såvida inte något annat anges."
-      }
-    },
-    "sorcerer_ability_score_improvement_3": {
-      "name": "Trollkonstnär: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "dragon_wings": {
       "name": "Drakvingar",
       "desc": {
@@ -3177,29 +2621,10 @@
         "1": "Du kan inte veckla ut dina vingar när du bär rustning såvida inte rustningen är anpassad för dem. Dessutom förstörs klädsel som inte är anpassad för dina vingar när du vecklar ut dem dem."
       }
     },
-    "sorcerer_ability_score_improvement_4": {
-      "name": "Trollkonstnär: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "metamagic_3": {
-      "name": "Metamagi",
-      "desc": {
-        "0": "På nivå 3 tilldelas du förmågan att anpassa dina trollformler utefter dina behov. Du tilldelas två av följande valfria metamagiska alternativ. Du tilldelas ytterligare en på nivå 10 samt nivå 17.",
-        "1": "Du kan endast använda en metamagiskt alternativ på en trollformel när du kastar den, såvida inte något annat anges."
-      }
-    },
     "draconic_presence": {
       "name": "Drakonisk närvaro",
       "desc": {
         "0": "Från och med nivå 18 kan du kanalisera den fruktade närvaron av din drakförfader. Detta orsakar dem runt om dig att bli bländad av beundran eller fruktan. Som en handling kan du spendera 5 trollkonstpoäng för att nyttja denna kraft och utstråla en aura av beundran eller fruktan (valfritt) på ett avstånd upp till 18 meter. Under en minut, eller tills att du tappar din koncentration (som om du kastat en koncentrationstrollformel), måste varje fientlig varelse som påbörjar sin tur i denna aura lyckas med ett vishetsräddningsslag eller bli förtrollad (om du väljer beundran) eller skrämd (om du väljer fruktan) fram tills auran upphör. En varelse som lyckas med räddningen är immun mot din aura i 24 timmar."
-      }
-    },
-    "sorcerer_ability_score_improvement_5": {
-      "name": "Trollkonstnär: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "sorcerous_restoration": {
@@ -3226,7 +2651,7 @@
         "0": "Din undersökning kring mystik och magin som tilldelats dig av din beskyddare tillåter dig utföra trollformler med lätthet."
       }
     },
-    "eldritch_invocations_1": {
+    "eldritch_invocations": {
       "name": "Kusliga åkallelser",
       "desc": {
         "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
@@ -3460,18 +2885,10 @@
         "2": "Din bok av skuggor kan vara en tunn, guldkantad bok med trollformler för förtrollning och illusion, som givits till dig av den ädla ärkevimsen. Det kan vara en tung bok klädd i demonskinn, prydd med järn, som innehåller besvärjelsetrollformler och en samling av förbjudna berättelser om hotfulla regioner runt kosmos, en gåva från djävulen. Det kan även vara en trasig dagbok som tillhört en dåre som drivits till galenskap av sin kontakt med den store äldre, som innehåller rester av trollformler som endast din egen bubblande galenskap låter dig förstå och kasta."
       }
     },
-    "warlock_ability_score_improvement_1": {
-      "name": "Häxmästare: Förbättring av förmågepoäng",
+    "warlock_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "eldritch_invocations_2": {
-      "name": "Kusliga åkallelser",
-      "desc": {
-        "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
-        "1": "På nivå 2 tilldelas du två valfria kusliga åkallelser. Dina alternativ av åkallelser finns detaljerade i slutet av rollbeskrivningen. När du uppnår en viss häxmästarnivå tilldelas du ytterligare valfria åkallelser. Dessa visas i kolumnen för kända åkallelser i häxmästartabellen.",
-        "2": "När du uppnår en högre nivå inom denna roll kan du välja en av de åkallelser du känner till och ersätta den med en annan åkallelse som du kan lära dig på den nivån."
       }
     },
     "dark_ones_own_luck": {
@@ -3481,58 +2898,14 @@
         "1": "När du har använt denna egenskap måste du fullborda en lång eller kort vila innan du kan använda den igen."
       }
     },
-    "eldritch_invocations_3": {
-      "name": "Kusliga åkallelser",
-      "desc": {
-        "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
-        "1": "På nivå 2 tilldelas du två valfria kusliga åkallelser. Dina alternativ av åkallelser finns detaljerade i slutet av rollbeskrivningen. När du uppnår en viss häxmästarnivå tilldelas du ytterligare valfria åkallelser. Dessa visas i kolumnen för kända åkallelser i häxmästartabellen.",
-        "2": "När du uppnår en högre nivå inom denna roll kan du välja en av de åkallelser du känner till och ersätta den med en annan åkallelse som du kan lära dig på den nivån."
-      }
-    },
-    "warlock_ability_score_improvement_2": {
-      "name": "Häxmästare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "eldritch_invocations_4": {
-      "name": "Kusliga åkallelser",
-      "desc": {
-        "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
-        "1": "På nivå 2 tilldelas du två valfria kusliga åkallelser. Dina alternativ av åkallelser finns detaljerade i slutet av rollbeskrivningen. När du uppnår en viss häxmästarnivå tilldelas du ytterligare valfria åkallelser. Dessa visas i kolumnen för kända åkallelser i häxmästartabellen.",
-        "2": "När du uppnår en högre nivå inom denna roll kan du välja en av de åkallelser du känner till och ersätta den med en annan åkallelse som du kan lära dig på den nivån."
-      }
-    },
     "fiendish_resilience": {
       "name": "Djävulsk resiliens",
       "desc": {
         "0": "Men start på nivå 10 kan du välja en skadetyp när du fullbordat en kort eller lång vila. Du blir resistent mot den skadetypen tills du väljer en annan typ med denna egenskap. Skada från magiska vapen eller silvervapen ignorerar denna resistens."
       }
     },
-    "mystic_arcanum_6th_level": {
-      "name": "Mystiska hemligheter (Nivå 6)",
-      "desc": {
-        "0": "På nivå 11 ger din beskyddare dig magisk information som kallas för mystiska hemligheter. Välj en trollformel på nivå 6 från häxmästartrollformellistan som blir denna mystiska hemlighet.",
-        "1": "Du kan kasta din mystiska hemlighetstrollformel en gång utan att förbruka ett trollformelutrymme. Du måste fullborda en lång vila innan du kan upprepa detta.",
-        "2": "På högre nivåer får du tillgång till fler valfria häxmästartrollformler som kan kastas på detta vis: en trollformel av nivå 7 på nivå 13, en trollformel av nivå 8 på nivå 15 och en trollformel av nivå 9 på nivå 17. Du får tillbaka alla användningar av dina mystiska hemligheter när du fullbordar en lång vila."
-      }
-    },
-    "warlock_ability_score_improvement_3": {
-      "name": "Häxmästare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "eldritch_invocations_5": {
-      "name": "Kusliga åkallelser",
-      "desc": {
-        "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
-        "1": "På nivå 2 tilldelas du två valfria kusliga åkallelser. Dina alternativ av åkallelser finns detaljerade i slutet av rollbeskrivningen. När du uppnår en viss häxmästarnivå tilldelas du ytterligare valfria åkallelser. Dessa visas i kolumnen för kända åkallelser i häxmästartabellen.",
-        "2": "När du uppnår en högre nivå inom denna roll kan du välja en av de åkallelser du känner till och ersätta den med en annan åkallelse som du kan lära dig på den nivån."
-      }
-    },
-    "mystic_arcanum_7th_level": {
-      "name": "Mystiska hemligheter (Nivå 7)",
+    "mystic_arcanum": {
+      "name": "Mystiska hemligheter",
       "desc": {
         "0": "På nivå 11 ger din beskyddare dig magisk information som kallas för mystiska hemligheter. Välj en trollformel på nivå 6 från häxmästartrollformellistan som blir denna mystiska hemlighet.",
         "1": "Du kan kasta din mystiska hemlighetstrollformel en gång utan att förbruka ett trollformelutrymme. Du måste fullborda en lång vila innan du kan upprepa detta.",
@@ -3547,63 +2920,11 @@
         "2": "Du måste fullborda en lång vila innan du kan använda denna egenskap igen."
       }
     },
-    "mystic_arcanum_8th_level": {
-      "name": "Mystiska hemligheter (Nivå 8)",
-      "desc": {
-        "0": "På nivå 11 ger din beskyddare dig magisk information som kallas för mystiska hemligheter. Välj en trollformel på nivå 6 från häxmästartrollformellistan som blir denna mystiska hemlighet.",
-        "1": "Du kan kasta din mystiska hemlighetstrollformel en gång utan att förbruka ett trollformelutrymme. Du måste fullborda en lång vila innan du kan upprepa detta.",
-        "2": "På högre nivåer får du tillgång till fler valfria häxmästartrollformler som kan kastas på detta vis: en trollformel av nivå 7 på nivå 13, en trollformel av nivå 8 på nivå 15 och en trollformel av nivå 9 på nivå 17. Du får tillbaka alla användningar av dina mystiska hemligheter när du fullbordar en lång vila."
-      }
-    },
-    "eldritch_invocations_6": {
-      "name": "Kusliga åkallelser",
-      "desc": {
-        "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
-        "1": "På nivå 2 tilldelas du två valfria kusliga åkallelser. Dina alternativ av åkallelser finns detaljerade i slutet av rollbeskrivningen. När du uppnår en viss häxmästarnivå tilldelas du ytterligare valfria åkallelser. Dessa visas i kolumnen för kända åkallelser i häxmästartabellen.",
-        "2": "När du uppnår en högre nivå inom denna roll kan du välja en av de åkallelser du känner till och ersätta den med en annan åkallelse som du kan lära dig på den nivån."
-      }
-    },
-    "warlock_ability_score_improvement_4": {
-      "name": "Häxmästare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
-    "mystic_arcanum_9th_level": {
-      "name": "Mystiska hemligheter (Nivå 9)",
-      "desc": {
-        "0": "På nivå 11 ger din beskyddare dig magisk information som kallas för mystiska hemligheter. Välj en trollformel på nivå 6 från häxmästartrollformellistan som blir denna mystiska hemlighet.",
-        "1": "Du kan kasta din mystiska hemlighetstrollformel en gång utan att förbruka ett trollformelutrymme. Du måste fullborda en lång vila innan du kan upprepa detta.",
-        "2": "På högre nivåer får du tillgång till fler valfria häxmästartrollformler som kan kastas på detta vis: en trollformel av nivå 7 på nivå 13, en trollformel av nivå 8 på nivå 15 och en trollformel av nivå 9 på nivå 17. Du får tillbaka alla användningar av dina mystiska hemligheter när du fullbordar en lång vila."
-      }
-    },
-    "eldritch_invocations_7": {
-      "name": "Kusliga åkallelser",
-      "desc": {
-        "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
-        "1": "På nivå 2 tilldelas du två valfria kusliga åkallelser. Dina alternativ av åkallelser finns detaljerade i slutet av rollbeskrivningen. När du uppnår en viss häxmästarnivå tilldelas du ytterligare valfria åkallelser. Dessa visas i kolumnen för kända åkallelser i häxmästartabellen.",
-        "2": "När du uppnår en högre nivå inom denna roll kan du välja en av de åkallelser du känner till och ersätta den med en annan åkallelse som du kan lära dig på den nivån."
-      }
-    },
-    "warlock_ability_score_improvement_5": {
-      "name": "Häxmästare: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "eldritch_master": {
       "name": "Kuslig mästare",
       "desc": {
         "0": "På nivå 20 kan du bruka din inre reserv av mystisk kraft medan du ber till din beskyddare för att få tillbaka dina förbrukade trollformelutrymmen. Du kan spendera en minut till att be din beskyddare om hjälp för att få tillbaka alla dina förbrukade trollformelutrymmen med din paktmagiegenskap.",
         "1": "När du får tillbaka dina trollformelutrymmen med denna egenskap måste du fullborda en lång vila innan du kan upprepa detta."
-      }
-    },
-    "eldritch_invocations_8": {
-      "name": "Kusliga åkallelser",
-      "desc": {
-        "0": "I dina studier kring magiska berättelser har du upptäckt kusliga åkallelser, fragment av förbjuden lärdom som fyller dig med en bestående magisk förmåga.",
-        "1": "På nivå 2 tilldelas du två valfria kusliga åkallelser. Dina alternativ av åkallelser finns detaljerade i slutet av rollbeskrivningen. När du uppnår en viss häxmästarnivå tilldelas du ytterligare valfria åkallelser. Dessa visas i kolumnen för kända åkallelser i häxmästartabellen.",
-        "2": "När du uppnår en högre nivå inom denna roll kan du välja en av de åkallelser du känner till och ersätta den med en annan åkallelse som du kan lära dig på den nivån."
       }
     },
     "spellcasting_wizard": {
@@ -3638,8 +2959,8 @@
         "0": "Från och med nivå 2 kan du skapa fickor av relativ säkerhet inom effekterna av dina frammanande trollformler. När du kastar en frammanande trollformel som påverkar andra varelser som du kan se, kan du välja ett antal av dem som är lika med 1 + trollformelns nivå. De valda varelserna lyckas automatiskt med sina räddningar mot trollformeln och de tar ingen skada om de normalt sätt tar hälften av skadan från en lyckad räddning."
       }
     },
-    "wizard_ability_score_improvement_1": {
-      "name": "Trollkarl: Förbättring av förmågepoäng",
+    "wizard_ability_score_improvement": {
+      "name": "Förbättring av förmågepoäng",
       "desc": {
         "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
@@ -3650,22 +2971,10 @@
         "0": "Från och med nivå 6 påverkar dina skadliga trolleritrick även varelser som undviker effektens angrepp. När varelsen lyckas med en räddning mot ditt trolleritrick, tar varelsen hälften av trolleritrickets skada (om någon) men lider inte av någon ytterligare effekt från trolleritricket."
       }
     },
-    "wizard_ability_score_improvement_2": {
-      "name": "Trollkarl: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "empowered_evocation": {
       "name": "Stärkt frammanande",
       "desc": {
         "0": "Från och med nivå 10 kan du addera ditt tillägg för intelligens till ett skadeslag av valfri frammanande trollformel för trollkarl som du kan kasta."
-      }
-    },
-    "wizard_ability_score_improvement_3": {
-      "name": "Trollkarl: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "overchannel": {
@@ -3675,23 +2984,11 @@
         "1": "Första gången du gör detta lider du inte av någon bieffekt. Om du använder denna egenskap igen, innan du fullbordat en lång vila, tar du 2d12 nekrotisk skada för varje nivå av trollformeln direkt efter du kastat den. Varje gång du använder denna egenskap igen innan du fullbordat en lång vila, ökar den nekrotiska skadan per trollformelnivå med 1d12. Denna skada ignorerar motstånd och immunitet."
       }
     },
-    "wizard_ability_score_improvement_4": {
-      "name": "Trollkarl: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
-      }
-    },
     "spell_mastery": {
       "name": "Bemästra trollformler",
       "desc": {
         "0": "På nivå 18 har du uppnått sådan bemästring av särskilda trollformler att du kan kasta dem när du vill. Välj en trollkarlstrollformel på nivå 1 och en på nivå 2 som finns i din trollformelbok. Du kan kasta dessa trollformler på deras lägsta nivå utan att förbruka ett trollformelutrymme när du har dem förberedda. Om du vill kasta någon av trollformlerna på en högre nivå, måste du förbruka ett trollformelutrymme som vanligt.",
         "1": "Genom att tillägna 8 timmar till studier, kan du byta ut en eller båda trollformlerna du valt mot andra trollformler av samma nivå."
-      }
-    },
-    "wizard_ability_score_improvement_5": {
-      "name": "Trollkarl: Förbättring av förmågepoäng",
-      "desc": {
-        "0": "När du når nivå 4, och återigen på nivå 8, 12, 16 och 19, kan du fritt välja ett förmågepoäng att öka med 2, alternativt kan du fritt välja två förmågepoäng att öka med 1. Som vanligt kan du inte använda denna egenskap till att öka ett förmågepoäng över 20."
       }
     },
     "signature_spell": {
