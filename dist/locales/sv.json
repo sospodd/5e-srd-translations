@@ -37,7 +37,7 @@
       "name": "Vishet",
       "desc": {
         "0": "Vishet reflekterar hur du är inställd till världen runtomkring dig och representerar uppmärksamhet och magkänsla.",
-        "1": "En vishetskontroll kan reflektera ett försök att avläsa kroppsspråk, förstå sig på någons känslor, observera saker i omgivningen, eller vårda en skadad person. Djurhantering-, insyn-, läkekonst-, uppmärksamhet- och överlevnadsförmågorna reflekterar begåvning inom särskilda vishetskontroller."
+        "1": "En vishetskontroll kan reflektera ett försök att avläsa kroppsspråk, förstå sig på någons känslor, observera saker i omgivningen, eller vårda en skadad person. Djurhantering-, insikt-, läkekonst-, uppmärksamhet- och överlevnadsförmågorna reflekterar begåvning inom särskilda vishetskontroller."
       }
     },
     "charisma": {
@@ -285,13 +285,13 @@
     "exhaustion": {
       "name": "Utmattad",
       "desc": {
-        "0": "1. Vissa specialförmågor och naturfaror, såsom svält och de långsiktiga effekterna av frysande eller kokande temperaturer, kan leda till ett specialtillstånd som kallas utmattad. Utmattning mäts i sex nivåer. En effekt kan ge en varelse en eller flera nivåer av utmattning, vilket anges i effektens beskrivning.",
-        "1": "2. Nackdel på förmågekontroller",
-        "2": "3. Halverad hastighet",
-        "3": "4. Nackdel på attackslag och räddningsslag",
-        "4": "5. Högsta skadepoäng halverad",
-        "5": "6. Hastighet sänkt till 0",
-        "6": "7. Döden",
+        "0": "Vissa specialförmågor och naturfaror, såsom svält och de långsiktiga effekterna av frysande eller kokande temperaturer, kan leda till ett specialtillstånd som kallas utmattad. Utmattning mäts i sex nivåer. En effekt kan ge en varelse en eller flera nivåer av utmattning, vilket anges i effektens beskrivning.",
+        "1": "1. Nackdel på förmågekontroller",
+        "2": "2. Halverad hastighet",
+        "3": "3. Nackdel på attackslag och räddningsslag",
+        "4": "4. Högsta skadepoäng halverad",
+        "5": "5. Hastighet sänkt till 0",
+        "6": "6. Döden",
         "7": "Ifall en redan utmattad varelse utsätts för en annan effekt som orsaker utmattning, så ökar dess utmattningsnivå med värdet som anges i effektens beskrivning.",
         "8": "En varelse utsätts för effekten av den nuvarande utmattningsnivån och även alla lägre nivåer. En varelse som till exempel utsätts för nivå 2 utmattning får sin hastighet halverad och har nackdel på förmågekontroller.",
         "9": "En effekt som eliminerar utmattning minskar dess nivå med vad som anges i effektens beskrivning, samtliga utmattningseffekter upphör alltså om en varelses utmattningsnivå minskar till under 1.",
@@ -3400,7 +3400,7 @@
       "name": "Förmåga: Historia"
     },
     "skill_insight": {
-      "name": "Förmåga: Insyn"
+      "name": "Förmåga: Insikt"
     },
     "skill_intimidation": {
       "name": "Förmåga: Skrämsel"
@@ -3539,9 +3539,9 @@
       }
     },
     "insight": {
-      "name": "Insyn",
+      "name": "Insikt",
       "desc": {
-        "0": "Din insynskontroll avgör ifall du kan fastställa en varelses sanna avsikter, som att avslöja en lögn eller förutspå någons nästa drag. Detta involverar att samla ledtrådar från kroppsspråk, sätt att tala och förändrat beteende."
+        "0": "Din insiktskontroll avgör ifall du kan fastställa en varelses sanna avsikter, som att avslöja en lögn eller förutspå någons nästa drag. Detta involverar att samla ledtrådar från kroppsspråk, sätt att tala och förändrat beteende."
       }
     },
     "intimidation": {
