@@ -73,56 +73,64 @@ class CreateSourceLocale {
 			// general
 			/(index|url)$/,
 
-			// ability scores
-			/^ability_scores\.\d+\.skills$/,
-
 			// backgrounds
-			/^backgrounds\.([a-z_.\d]+)(starting_proficiencies|language_options|starting_equipment|starting_equipment_options|choose|type|alignments)$/,
+			/^backgrounds\.(\d+)\.(language_options|(personality_traits|ideals|bonds|flaws)\.(type|from\.(type|option_set_type|options\.(\d+)\.option_type)))$/,
+			/^backgrounds\.(\d+)\.starting_equipment_options\.(\d+)\.(type|from\.option_set_type)/,
 
 			// classes
-			/^classes\.([a-z_.\d]+)(hit_die|proficiency_choices|proficiencies|saving_throws|starting_equipment|starting_equipment_options|class_levels|multi_classing|subclasses|level|spellcasting_ability|spells)$/,
-
-			// equipment categories
-			/^equipment_categories\.([a-z_.\d]+)equipment$/,
+			/^classes\.(\d+)\.(hit_die|class_levels|level|spellcasting_ability|spells)$/,
+			/^classes\.(\d+)\.proficiency_choices\.(\d+)\.(type|from\.(option_set_type|options\.(\d+)\.(option_type|choice\.(choose|type|from\.option_set_type))))$/,
+			/^classes\.(\d+)\.proficiency_choices\.(\d+)\.from\.options\.(\d+)\.choice\.from\.options\.(\d+)\.option_type/,
+			/^classes\.(\d+)\.starting_equipment_options\.(\d+)\.from\.options\.(\d+)\.(option_type|choice|items\.(\d+)\.choice)\.(choose|type|from\.option_set_type)/,
+			/^classes\.(\d+)\.starting_equipment_options\.(\d+)\.from\.options\.(\d+)\.items\.(\d+)\.option_type/,
+			/^classes\.(\d+)\.starting_equipment_options\.(\d+)\.(type|from\.(option_set_type|options\.(\d+)\.(option_type|count)))/,
+			/^classes\.(\d+)\.multi_classing\.proficiency_choices\.(\d+)\.(choose|type|from\.(option_set_type|options\.(\d+)\.option_type))/,
 
 			// equipment
-			/^equipment\.([a-z_.\d]+)(equipment_category|cost\.quantity|damage|properties|armor_class|str_minimum|stealth_disadvantage|properties|speed\.quantity|weapon_category|weight|armor_category|gear_category|contents|tool_category|vehicle_category)$/,
+			/^equipment\.(\d+)\.(cost\.quantity|armor_class|str_minimum|stealth_disadvantage|speed\.quantity|weight)$/,
 
 			// feats
-			/^feats\.([a-z_.\d]+)prerequisites$/,
+			/^feats\.(\d+)\.prerequisites\.minimum_score$/,
 
 			// features
-			/^features\.([a-z_.\d]+)(class|level|feature_specific|parent|prerequisites|reference)$/,
+			/^features\.(\d+)\.(level|prerequisites|reference)$/,
+			// /^features\.(\d+)\.feature_specific\.expertise_options\.from\.options\.(\d+)\.item\.name/,
+			/^features\.(\d+)\.feature_specific\.(subfeature_options|expertise_options)\.(type|from\.(option_set_type|options\.(\d+)\.(option_type|(items.(\d+)\.)?(option_type|choice\.(type|from\.(option_set_type|options\.(\d+)\.option_type))))))/,
 
 			// magic items
-			/^magic_items\.([a-z_.\d]+)(equipment_category|variant|variants)$/,
+			/^magic_items\.(\d+)\.variant$/,
 
 			// monsters
-			/^monsters\.([a-z_.\d]+)((actions\.([a-z_.\d]+)(option_set_type|option_type|count|type))|multiattack_type|armor_class|attack_options|challenge_rating|condition_immunities|damage|dc|hit_points_roll|image|images|options\.from\.[\d.]+\.type|proficiencies|spellcasting)$/,
+			/^monsters\.(\d+)\.(attack_options|challenge_rating|hit_points_roll|image|images)/,
+			/^monsters\.(\d+)\.armor_class\.(\d+)\.(type|value)/,
+			/^monsters\.(\d+)\.special_abilities\.(\d+)\.spellcasting\.(components_required|school)/,
+			/^monsters\.(\d+)\.actions\.(\d+)\.(multiattack_type|action_options\.(choose|type|from\.(option_set_type|options\.(\d+)\.(option_type|type|items\.(\d+)\.(option_type|type)))))/,
+			// /^monsters\.(\d+)\.actions\.(\d+)\.options\.(type|from\.(option_set_type|options\.(\d+)\.(option_type|dc|damage)))/,
+			/^monsters\.(\d+)\.([a-z_.\d]+)\.(damage\.(damage_dice|(\d+)\.type)|dc\.success_type|from\.(option_set_type|options\.(\d+)\.option_type))$/,
+			/^monsters\.(\d+)\.actions\.(\d+)\.options\.(type|from\.options\.(\d+)\.(dc\.success_type|damage\.(\d+)\.damage_dice))/,
 
 			// proficiencies
-			/^proficiencies\.([a-z_.\d]+)(type|classes|races|reference)$/,
+			/^proficiencies\.(\d+)\.type$/,
 
 			// races
-			/^races\.([a-z_.\d]+)(ability_bonuses|starting_proficiencies|starting_proficiency_options|languages|traits|subraces|language_options|ability_bonus_options)$/,
-
-			// rules
-			/^rules\.([a-z_.\d]+)subsections$/,
-
-			// skills
-			/^skills\.([a-z_.\d]+)ability_score$/,
+			/^races\.(\d+)\.(starting_proficiency_options|language_options|ability_bonus_options)\.(type|from\.(option_set_type|options\.(\d+)\.option_type))$/,
 
 			// spells
-			/^spells\.([a-z_.\d]+)(ritual|concentration|damage|school|classes|subclasses|dc_type)$/,
+			/^spells\.(\d+)\.(ritual|concentration|damage\.damage_at_slot_level)$/,
 
 			// subclasses
-			/^subclasses\.([a-z_.\d]+)(class|subclass_flavor|subclass_levels|spells)$/,
+			/^subclasses\.(\d+)\.(subclass_flavor|subclass_levels|spells\.(\d+)\.prerequisites\.(\d+)\.type)$/,
 
-			// races
-			/^subraces\.([a-z_.\d]+)(race|ability_bonuses|racial_traits|starting_proficiencies|language_options)$/,
+			// subraces
+			/^subraces\.(\d+)\.language_options\.(type|from\.(option_set_type|options\.(\d+)\.option_type))$/,
 
 			// traits
-			/^traits\.([a-z_.\d]+)(language_options|races|proficiencies|proficiency_choices|trait_specific|parent)$/
+			/^traits\.(\d+)\.(proficiency_choices|language_options)\.(type|from\.(option_set_type|options\.(\d+)\.option_type))$/,
+			/^traits\.(\d+)\.trait_specific\.breath_weapon\.(area_of_effect|usage|(dc\.success_type|damage\.damage_at_character_level))/,
+			// /^traits\.(\d+)\.trait_specific\.(spell_options|subtrait_options)/,
+			/^traits\.(\d+)\.trait_specific\.trait_specific\.spell_options\.from\.options\.(\d+)\.option_type/,
+			/^traits\.(\d+)\.trait_specific\.subtrait_options\.from\.options\.(\d+)\.option_type/,
+			/^traits\.(\d+)\.trait_specific\.spell_options\.(type|from\.(option_set_type|options\.(\d+)\.option_type))/,
 		]
 
 		this.valuesToIgnore = [
@@ -214,7 +222,7 @@ class CreateSourceLocale {
 			.sort((a) => {
 				if (a.match(/Monsters|Traits|Proficiencies/)) {
 					return 1
-				} else if (a.match(/Magic-Schools/)) {
+				} else if (a.match(/Magic-Schools|Skills/)) {
 					return -1
 				}
 
@@ -298,7 +306,7 @@ class CreateSourceLocale {
 		}
 
 		// replace numeric indeces with name based ones for root level of all domains
-		if (path.match(/^[a-z_]+\.\d+\.[a-z_]+/)) {
+		if (path.match(/^[a-z_]+\.(\d+)\.[a-z_]+/)) {
 			const pathToItem = pathParts.slice(1, 2).join('.')
 
 			let textIndex
@@ -434,13 +442,62 @@ class CreateSourceLocale {
 	 */
 
 	parseSourceFileData = async (data, property, sourceFileData, path) => {
+		let pathFromUrl = undefined
+
 		path = [
 			...path.split('.'),
 			...(!property && property !== 0 ? [] : [property])
 		]
 			.join('.')
 
-		if (this.pathsToIgnore.find(pathRegex => path.match(pathRegex))) {
+		if (property === 'name') {			
+			const parentObject = _.get(
+				sourceFileData,
+				path
+					.split('.')
+					.filter((_, index) => ![0, path.split('.').length - 1].includes(index))
+					.join('.')
+			)
+
+			if (parentObject && Object.keys(parentObject).includes('url')) {
+				const urlParts = parentObject.url.split('/').filter(pathPart => pathPart && pathPart !== 'api')
+
+				pathFromUrl = [
+					...urlParts.map(pathPart => ({
+						str: 'strength',
+						dex: 'dexterity',
+						con: 'constitution',
+						int: 'intelligence',
+						wis: 'wisdom',
+						cha: 'charisma',
+					}[pathPart] ?? pathPart).replaceAll('-', '_')),
+					'name'
+				].join('.')
+
+				const currentFileName = this.sourceFileNames[
+					this.domains.indexOf(path.split('.')[0])
+				].split('.')[0]
+	
+				const templatePath = [
+					currentFileName,
+					...path.split('.').slice(1)
+				].join('.')
+
+				if (path.split('.').length > 3) {
+					await Promise.resolve(
+						_.set(
+							this.templateData,
+							templatePath,
+							this.formatPlaceholder(pathFromUrl)
+						)
+					)
+	
+					return
+				}
+			}
+		}
+
+		if (!pathFromUrl && this.pathsToIgnore.find(pathRegex => path.match(pathRegex))) {
 			return
 		}
 
@@ -464,6 +521,10 @@ class CreateSourceLocale {
 			// handle other types
 			if (this.valuesToIgnore.find(valueRegex => valueForLocale.toString().match(valueRegex))) {
 				return
+			}
+
+			if (/starting_equipment_options\.(\d+)\.from\.options\.(\d+)\.choice\.desc/.test(path)) {
+				// TODO: Create additional common domains to put starting equipment and proficiency choice descriptions in
 			}
 
 			if (/features.([a-z_.\d]+).name/.test(path) && this.parenthesizedInformationRegex.test(data)) {

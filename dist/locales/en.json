@@ -204,10 +204,80 @@
   },
   "classes": {
     "barbarian": {
-      "name": "Barbarian"
+      "name": "Barbarian",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a greataxe or (b) any martial melee weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any martial melee weapon"
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) two handaxes or (b) any simple weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        }
+      }
     },
     "bard": {
       "name": "Bard",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose any three"
+        },
+        "1": {
+          "desc": "Three musical instruments of your choice"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a rapier, (b) a longsword, or (c) any simple weapon",
+          "options": {
+            "2": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) a diplomat’s pack or (b) an entertainer’s pack"
+        },
+        "2": {
+          "desc": "(a) a lute or (b) any other musical instrument",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any other musical instrument"
+              }
+            }
+          }
+        }
+      },
+      "multi_classing": {
+        "proficiency_choices": {
+          "0": {
+            "desc": "skill"
+          },
+          "1": {
+            "desc": "musical instrument"
+          }
+        }
+      },
       "spellcasting": {
         "cantrips": {
           "name": "Cantrips",
@@ -255,6 +325,53 @@
     },
     "cleric": {
       "name": "Cleric",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two from History, Insight, Medicine, Persuasion, and Religion"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a mace or (b) a warhammer (if proficient)",
+          "options": {
+            "1": {
+              "prerequisites": {
+                "0": {
+                  "type": "proficiency"
+                }
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)",
+          "options": {
+            "2": {
+              "prerequisites": {
+                "0": {
+                  "type": "proficiency"
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        },
+        "3": {
+          "desc": "(a) a priest’s pack or (b) an explorer’s pack"
+        },
+        "4": {
+          "desc": "holy symbol"
+        }
+      },
       "spellcasting": {
         "cantrips": {
           "name": "Cantrips",
@@ -295,6 +412,36 @@
     },
     "druid": {
       "name": "Druid",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a wooden shield or (b) any simple weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) a scimitar or (b) any simple melee weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple melee weapon"
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "druidic focus"
+        }
+      },
       "spellcasting": {
         "cantrips": {
           "name": "Cantrips",
@@ -334,13 +481,139 @@
       }
     },
     "fighter": {
-      "name": "Fighter"
+      "name": "Fighter",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) chain mail or (b) leather armor, longbow, and 20 arrows"
+        },
+        "1": {
+          "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
+          "options": {
+            "0": {
+              "items": {
+                "0": {
+                  "choice": {
+                    "desc": "a martial weapon"
+                  }
+                }
+              }
+            },
+            "1": {
+              "choice": {
+                "desc": "two martial weapons"
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "(a) a light crossbow and 20 bolts or (b) two handaxes"
+        },
+        "3": {
+          "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack"
+        }
+      },
+      "multi_classing": {
+        "prerequisite_options": {
+          "type": "ability-scores",
+          "option_set_type": "options_array",
+          "options": {
+            "0": {
+              "option_type": "score_prerequisite"
+            },
+            "1": {
+              "option_type": "score_prerequisite"
+            }
+          }
+        }
+      }
     },
     "monk": {
-      "name": "Monk"
+      "name": "Monk",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth"
+        },
+        "1": {
+          "desc": "Choose one type of artisan’s tools or one musical instrument",
+          "options": {
+            "0": {
+              "choice": {
+                "desc": "artisan's tools"
+              }
+            },
+            "1": {
+              "choice": {
+                "desc": "musical instrument"
+              }
+            }
+          }
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a shortsword or (b) any simple weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack"
+        }
+      }
     },
     "paladin": {
       "name": "Paladin",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
+          "options": {
+            "0": {
+              "items": {
+                "0": {
+                  "choice": {
+                    "desc": "a martial weapon"
+                  }
+                }
+              }
+            },
+            "1": {
+              "choice": {
+                "desc": "two martial weapons"
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) five javelins or (b) any simple melee weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "(a) a priest’s pack or (b) an explorer’s pack"
+        },
+        "3": {
+          "desc": "holy symbol"
+        }
+      },
       "spellcasting": {
         "preparing_and_casting_spells": {
           "name": "Preparing and Casting Spells",
@@ -369,6 +642,29 @@
     },
     "ranger": {
       "name": "Ranger",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) scale mail or (b) leather armor"
+        },
+        "1": {
+          "desc": "(a) two shortswords or (b) two simple melee weapons",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "two simple melee weapons"
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack"
+        }
+      },
       "spellcasting": {
         "spell_slots": {
           "name": "Spell Slots",
@@ -396,10 +692,56 @@
       }
     },
     "rogue": {
-      "name": "Rogue"
+      "name": "Rogue",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a rapier or (b) a shortsword"
+        },
+        "1": {
+          "desc": "(a) a shortbow and quiver of 20 arrows or (b) a shortsword"
+        },
+        "2": {
+          "desc": "(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack"
+        }
+      }
     },
     "sorcerer": {
       "name": "Sorcerer",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) a component pouch or (b) an arcane focus",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "arcane focus"
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack"
+        }
+      },
       "spellcasting": {
         "cantrips": {
           "name": "Cantrips",
@@ -440,6 +782,39 @@
     },
     "warlock": {
       "name": "Warlock",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "any simple weapon"
+              }
+            }
+          }
+        },
+        "1": {
+          "desc": "(a) a component pouch or (b) an arcane focus",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "arcane focus"
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "(a) a scholar’s pack or (b) a dungeoneer’s pack"
+        },
+        "3": {
+          "desc": "any simple weapon"
+        }
+      },
       "spellcasting": {
         "cantrips": {
           "name": "Cantrips",
@@ -481,6 +856,29 @@
     },
     "wizard": {
       "name": "Wizard",
+      "proficiency_choices": {
+        "0": {
+          "desc": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion"
+        }
+      },
+      "starting_equipment_options": {
+        "0": {
+          "desc": "(a) a quarterstaff or (b) a dagger"
+        },
+        "1": {
+          "desc": "(a) a component pouch or (b) an arcane focus",
+          "options": {
+            "1": {
+              "choice": {
+                "desc": "arcane focus"
+              }
+            }
+          }
+        },
+        "2": {
+          "desc": "(a) a scholar’s pack or (b) an explorer’s pack"
+        }
+      },
       "spellcasting": {
         "cantrips": {
           "name": "Cantrips",
@@ -531,42 +929,11 @@
       "and": " and ",
       "and_with_oxford_comma": ", and "
     },
-    "language_properties": {
-      "type": {
-        "standard": "Standard",
-        "exotic": "Exotic"
-      },
-      "typical_speakers": {
-        "humans": "Humans",
-        "dwarves": "Dwarves",
-        "elves": "Elves",
-        "ogres": "Ogres",
-        "giants": "Giants",
-        "gnomes": "Gnomes",
-        "goblinoids": "Goblinoids",
-        "halflings": "Halflings",
-        "orcs": "Orcs",
-        "demons": "Demons",
-        "celestials": "Celestials",
-        "dragons": "Dragons",
-        "dragonborn": "Dragonborn",
-        "aboleths": "Aboleths",
-        "cloakers": "Cloakers",
-        "devils": "Devils",
-        "elementals": "Elementals",
-        "fey_creatures": "Fey creatures",
-        "underdark_traders": "Underdark traders"
-      },
-      "script": {
-        "common": "Common",
-        "dwarvish": "Dwarvish",
-        "elvish": "Elvish",
-        "infernal": "Infernal",
-        "celestial": "Celestial",
-        "draconic": "Draconic"
-      }
-    },
     "equipment_properties": {
+      "weapon_category": {
+        "simple": "Simple",
+        "martial": "Martial"
+      },
       "weapon_range": {
         "melee": "Melee",
         "ranged": "Ranged"
@@ -576,6 +943,23 @@
         "simple_ranged": "Simple Ranged",
         "martial_melee": "Martial Melee",
         "martial_ranged": "Martial Ranged"
+      },
+      "armor_category": {
+        "light": "Light",
+        "medium": "Medium",
+        "heavy": "Heavy",
+        "shield": "Shield"
+      },
+      "tool_category": {
+        "artisans_tools": "Artisan's Tools",
+        "gaming_sets": "Gaming Sets",
+        "musical_instrument": "Musical Instrument",
+        "other_tools": "Other Tools"
+      },
+      "vehicle_category": {
+        "mounts_and_other_animals": "Mounts and Other Animals",
+        "tack_harness_and_drawn_vehicles": "Tack, Harness, and Drawn Vehicles",
+        "waterborne_vehicles": "Waterborne Vehicles"
       },
       "rarity": {
         "uncommon": "Uncommon",
@@ -654,6 +1038,44 @@
         "special": "Special",
         "sight": "Sight",
         "unlimited": "Unlimited"
+      },
+      "count": {
+        "number_of_heads": "Number of Heads"
+      }
+    },
+    "language_properties": {
+      "type": {
+        "standard": "Standard",
+        "exotic": "Exotic"
+      },
+      "typical_speakers": {
+        "humans": "Humans",
+        "dwarves": "Dwarves",
+        "elves": "Elves",
+        "ogres": "Ogres",
+        "giants": "Giants",
+        "gnomes": "Gnomes",
+        "goblinoids": "Goblinoids",
+        "halflings": "Halflings",
+        "orcs": "Orcs",
+        "demons": "Demons",
+        "celestials": "Celestials",
+        "dragons": "Dragons",
+        "dragonborn": "Dragonborn",
+        "aboleths": "Aboleths",
+        "cloakers": "Cloakers",
+        "devils": "Devils",
+        "elementals": "Elementals",
+        "fey_creatures": "Fey creatures",
+        "underdark_traders": "Underdark traders"
+      },
+      "script": {
+        "common": "Common",
+        "dwarvish": "Dwarvish",
+        "elvish": "Elvish",
+        "infernal": "Infernal",
+        "celestial": "Celestial",
+        "draconic": "Draconic"
       }
     },
     "spell_properties": {
@@ -861,8 +1283,10 @@
     "monster_properties": {
       "type": {
         "aberration": "aberration",
+        "melee": "melee",
         "humanoid": "humanoid",
         "dragon": "dragon",
+        "ability": "ability",
         "elemental": "elemental",
         "monstrosity": "monstrosity",
         "construct": "construct",
@@ -874,6 +1298,7 @@
         "giant": "giant",
         "celestial": "celestial",
         "undead": "undead",
+        "ranged": "ranged",
         "swarm_of_tiny_beasts": "swarm of Tiny beasts"
       },
       "alignment": {
@@ -963,6 +1388,12 @@
         "winter_wolf": "Winter Wolf",
         "worg": "Worg"
       },
+      "usage_types": {
+        "per_day": "per day",
+        "recharge_on_roll": "recharge on roll",
+        "at_will": "at will",
+        "recharge_after_rest": "recharge after rest"
+      },
       "subtype": {
         "any_race": "any race",
         "demon": "demon",
@@ -1007,9 +1438,16 @@
         "slashing_from_nonmagical_attacks_not_made_with_silvered_weapons": "slashing from nonmagical attacks not made with silvered weapons",
         "slashing_damage_from_nonmagical_weapons_that_arent_silvered": "slashing damage from nonmagical weapons that aren't silvered"
       },
-      "usage_types": {
-        "per_day": "per day",
-        "recharge_after_rest": "recharge after rest"
+      "notes": {
+        "cast_on_self_before_combat": "Cast on self before combat",
+        "self_only": "Self Only",
+        "can_create_wine_instead_of_water": "Can create wine instead of water",
+        "air_elemental_only": "Air Elemental Only",
+        "one_handed": "One handed",
+        "two_handed": "Two handed",
+        "with_shillelagh": "With shillelagh",
+        "fire_elemental_only": "Fire Elemental only",
+        "any_humanoid_form": "Any Humanoid Form"
       },
       "rest_types": {
         "short": "short",
@@ -10914,6 +11352,11 @@
     },
     "frost_giant": {
       "name": "Frost Giant",
+      "armor_class": {
+        "0": {
+          "desc": "patchwork armor"
+        }
+      },
       "actions": {
         "multiattack": {
           "name": "Multiattack",
@@ -14294,6 +14737,11 @@
     },
     "skeleton": {
       "name": "Skeleton",
+      "armor_class": {
+        "0": {
+          "desc": "armor scraps"
+        }
+      },
       "actions": {
         "shortsword": {
           "name": "Shortsword",
@@ -15092,14 +15540,6 @@
     },
     "vampire_vampire": {
       "name": "Vampire, Vampire Form",
-      "forms": {
-        "0": {
-          "name": "Vampire, Bat Form"
-        },
-        "1": {
-          "name": "Vampire, Mist Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15171,14 +15611,6 @@
     },
     "vampire_bat": {
       "name": "Vampire, Bat Form",
-      "forms": {
-        "0": {
-          "name": "Vampire, Vampire Form"
-        },
-        "1": {
-          "name": "Vampire, Mist Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15236,14 +15668,6 @@
     },
     "vampire_mist": {
       "name": "Vampire, Mist Form",
-      "forms": {
-        "0": {
-          "name": "Vampire, Vampire Form"
-        },
-        "1": {
-          "name": "Vampire, Bat Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15424,6 +15848,11 @@
     },
     "warhorse_skeleton": {
       "name": "Warhorse Skeleton",
+      "armor_class": {
+        "0": {
+          "desc": "barding scraps"
+        }
+      },
       "actions": {
         "hooves": {
           "name": "Hooves",
@@ -15475,14 +15904,6 @@
     },
     "werebear_bear": {
       "name": "Werebear, Bear Form",
-      "forms": {
-        "0": {
-          "name": "Werebear, Human Form"
-        },
-        "1": {
-          "name": "Werebear, Hybrid Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15510,14 +15931,6 @@
     },
     "werebear_human": {
       "name": "Werebear, Human Form",
-      "forms": {
-        "0": {
-          "name": "Werebear, Bear Form"
-        },
-        "1": {
-          "name": "Werebear, Hybrid Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15541,14 +15954,6 @@
     },
     "werebear_hybrid": {
       "name": "Werebear, Hybrid Form",
-      "forms": {
-        "0": {
-          "name": "Werebear, Bear Form"
-        },
-        "1": {
-          "name": "Werebear, Human Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15580,14 +15985,6 @@
     },
     "wereboar_boar": {
       "name": "Wereboar, Boar Form",
-      "forms": {
-        "0": {
-          "name": "Wereboar, Human Form"
-        },
-        "1": {
-          "name": "Wereboar, Hybrid Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15611,14 +16008,6 @@
     },
     "wereboar_human": {
       "name": "Wereboar, Human Form",
-      "forms": {
-        "0": {
-          "name": "Wereboar, Boar Form"
-        },
-        "1": {
-          "name": "Wereboar, Hybrid Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15642,14 +16031,6 @@
     },
     "wereboar_hybrid": {
       "name": "Wereboar, Hybrid Form",
-      "forms": {
-        "0": {
-          "name": "Wereboar, Boar Form"
-        },
-        "1": {
-          "name": "Wereboar, Human Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15681,14 +16062,6 @@
     },
     "wererat_human": {
       "name": "Wererat, Human Form",
-      "forms": {
-        "0": {
-          "name": "Wererat, Hybrid Form"
-        },
-        "1": {
-          "name": "Wererat, Rat Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15716,14 +16089,6 @@
     },
     "wererat_hybrid": {
       "name": "Wererat, Hybrid Form",
-      "forms": {
-        "0": {
-          "name": "Wererat, Human Form"
-        },
-        "1": {
-          "name": "Wererat, Rat Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15755,14 +16120,6 @@
     },
     "wererat_rat": {
       "name": "Wererat, Rat Form",
-      "forms": {
-        "0": {
-          "name": "Wererat, Human Form"
-        },
-        "1": {
-          "name": "Wererat, Hybrid Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15782,14 +16139,6 @@
     },
     "weretiger_human": {
       "name": "Weretiger, Human Form",
-      "forms": {
-        "0": {
-          "name": "Weretiger, Hybrid Form"
-        },
-        "1": {
-          "name": "Weretiger, Tiger Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15817,14 +16166,6 @@
     },
     "weretiger_hybrid": {
       "name": "Weretiger, Hybrid Form",
-      "forms": {
-        "0": {
-          "name": "Weretiger, Human Form"
-        },
-        "1": {
-          "name": "Weretiger, Tiger Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15864,14 +16205,6 @@
     },
     "weretiger_tiger": {
       "name": "Weretiger, Tiger Form",
-      "forms": {
-        "0": {
-          "name": "Weretiger, Human Form"
-        },
-        "1": {
-          "name": "Weretiger, Hybrid Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15899,14 +16232,6 @@
     },
     "werewolf_human": {
       "name": "Werewolf, Human Form",
-      "forms": {
-        "0": {
-          "name": "Werewolf, Hybrid Form"
-        },
-        "1": {
-          "name": "Werewolf, Wolf Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15930,14 +16255,6 @@
     },
     "werewolf_hybrid": {
       "name": "Werewolf, Hybrid Form",
-      "forms": {
-        "0": {
-          "name": "Werewolf, Human Form"
-        },
-        "1": {
-          "name": "Werewolf, Wolf Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -15965,14 +16282,6 @@
     },
     "werewolf_wolf": {
       "name": "Werewolf, Wolf Form",
-      "forms": {
-        "0": {
-          "name": "Werewolf, Human Form"
-        },
-        "1": {
-          "name": "Werewolf, Hybrid Form"
-        }
-      },
       "special_abilities": {
         "shapechanger": {
           "name": "Shapechanger",
@@ -16844,6 +17153,9 @@
       "alignment": "Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.",
       "age": "Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years.",
       "size_description": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.",
+      "starting_proficiency_options": {
+        "desc": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+      },
       "language_desc": "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
     },
     "elf": {
@@ -20437,66 +20749,132 @@
       "name": "Draconic Ancestry",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "subtrait_options": {
+          "option_set_type": "options_array",
+          "type": "trait"
+        }
       }
     },
     "draconic_ancestry_black": {
       "name": "Draconic Ancestry (Black)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_blue": {
       "name": "Draconic Ancestry (Blue)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_brass": {
       "name": "Draconic Ancestry (Brass)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_bronze": {
       "name": "Draconic Ancestry (Bronze)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_copper": {
       "name": "Draconic Ancestry (Copper)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_gold": {
       "name": "Draconic Ancestry (Gold)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_green": {
       "name": "Draconic Ancestry (Green)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_red": {
       "name": "Draconic Ancestry (Red)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_silver": {
       "name": "Draconic Ancestry (Silver)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "draconic_ancestry_white": {
       "name": "Draconic Ancestry (White)",
       "desc": {
         "0": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table."
+      },
+      "trait_specific": {
+        "breath_weapon": {
+          "name": "Breath Weapon",
+          "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        }
       }
     },
     "breath_weapon": {
