@@ -3,3 +3,6 @@ node_modules
 
 src/templates/*
 !src/templates/.gitkeep
+
+src/output/*
+!src/output/.gitkeep

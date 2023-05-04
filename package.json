@@ -6,11 +6,15 @@
     "main": "dist/locales/en/common.json",
     "private": true,
     "scripts": {
-        "create-source-locale": "node src/createSourceLocale.js"
+        "create-source-locale": "node src/createSourceLocale.js",
+        "populate-templates": "node src/populateTemplates.js"
     },
     "devDependencies": {
         "5e-database": "ssh://git@github.com:5e-bits/5e-database.git#v3.1.1",
         "eslint": "^8.18.0",
         "lodash": "^4.17.21"
+    },
+    "dependencies": {
+        "liquidjs": "^10.6.0"
     }
 }
