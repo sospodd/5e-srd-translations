@@ -48,6 +48,14 @@ yarn create-source-locale --generate-templates
 
 This will create locale (`dist/locales/en/*.json`) and template (`src/templates/*.json`) files for each domain. The contents of the English locale files can then be used as the source locale when translating the content into other languages.
 
+## Known issues
+1. Traits: There's a duplicate entry for each color of Draconic Ancestry and they in turn have a duplicate of the Breath Weapon trait in the locale. Logic similar to that in Features (ignore parenthesized suffix in key) should be used here as well.
+2. Monsters: Equipment types `melee`, `ability` and `ranged` have mistakenly been added to monster types. Regex needs to be improved.
+3. Classes: Newly added proficiency choice and starting equipment descriptions should be added to the `common` domain to prevent duplicates and make for a more desirable translation path.
+4. Features: Some of the translation paths for subfeature options (such as fightling style and dragon ancestor) are incorrect, resulting in empty entries for source language (`"en": ""`) when populating the templates.
+5. Subclasses: Translation paths for level prerequisites are incorrect, resulting in empty entries for source language (`"en": ""`) when populating the templates.
+6. Documentation: Populate templates feature is currently undocumented
+
 ## Format
 
 The translations in this repository are in [Key-Value JSON](https://poeditor.com/localization/files/key-value-json) format.
